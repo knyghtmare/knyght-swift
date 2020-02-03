@@ -10,6 +10,14 @@ print(friends[0])
 
 var e = [String]()
 
-friends.count
+print(friends.count)
 
 // dictionaries
+
+var sampleDict = [String:String]()
+
+sampleDict["One"] = "Value of 1"
+sampleDict["Two"] = "Value of 2"
+sampleDict["Three"] = "Value of 3"
+
+print(sampleDict)
