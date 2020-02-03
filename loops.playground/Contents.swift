@@ -23,3 +23,9 @@ while(i < 5) {
     print("hello")
     i += 1
 }
+
+// repeat-while loop
+repeat{
+    print("bye")
+    i -= 1
+}while(i > 0)
