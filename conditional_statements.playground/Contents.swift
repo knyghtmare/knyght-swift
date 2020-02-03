@@ -10,6 +10,7 @@ var a = 5
  == => equals to
  <= => less than equal to
  >= => greater than equal to
+ != => NOT
  */
 
 if(a == 5) {
