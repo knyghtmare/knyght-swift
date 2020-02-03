@@ -19,3 +19,16 @@ print(a+b)
 print(a-b)
 print(a*b)
 print(a/b)
+
+// let keyword will NOT
+// allow you to change the
+// variable
+
+let c = 10
+
+// Data Types
+
+var str2:String = "Hello World!"
+var d:Int = 23
+var e:Float = 2.3
+
