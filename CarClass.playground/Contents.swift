@@ -4,6 +4,7 @@ var str = "Hello, playground"
 
 // inheritance between classes
 
+// parent class
 class Car {
     var topSpeed = 200
     
@@ -12,11 +13,12 @@ class Car {
     }
 }
 
-class FutureCar {
-    var topSpeed = 250
+// inheritance
+// child class
+class FutureCar : Car {
     
-    func drive() {
-        print("Driving at \(topSpeed) km/h")
+    override func drive() {
+        print("Driving at \(topSpeed + 50) km/h")
     }
     
     func fly() {
@@ -26,5 +28,9 @@ class FutureCar {
 
 let myCar = Car()
 myCar.drive()
+
+let myNewCar = FutureCar()
+myNewCar.fly()
+myNewCar.drive()
 
 
