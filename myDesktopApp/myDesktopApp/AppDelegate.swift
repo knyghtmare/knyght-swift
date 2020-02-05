@@ -2,37 +2,44 @@
 //  AppDelegate.swift
 //  myDesktopApp
 //
-//  Created by Tahsin Jahin Khalid on 04/02/2020.
+//  Created by Tahsin Jahin Khalid on 05/02/2020.
 //  Copyright © 2020 Tahsin Jahin Khalid. All rights reserved.
 //
 
 import Cocoa
-import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
-    var window: NSWindow!
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
-
-        // Create the window and set the content view. 
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+        // Insert code here to initialize your application
+        statusItem.button?.title = "AAA"
+        statusItem.button?.target = self
+        statusItem.button?.action = #selector(showSettings)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+    }
+    
+    @objc func showSettings() {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateController(withIdentifier: "ViewController") as? ViewController else {
+            fatalError("Unable to find ViewController in storyboard!")
+        }
+        
+        guard let button = statusItem.button else {
+            fatalError("Couldn't find status item button.")
+        }
+        
+        let popoverView = NSPopover()
+        popoverView.contentViewController = vc
+        popoverView.behavior = .transient
+        popoverView.show(relativeTo: button.bounds, of: button, preferredEdge: .maxY)
     }
 
     // MARK: - Core Data stack

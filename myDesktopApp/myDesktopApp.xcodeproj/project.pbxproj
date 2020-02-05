@@ -7,67 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CFF2E1E23E9B09F00E003E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF2E1D23E9B09F00E003E0 /* AppDelegate.swift */; };
-		0CFF2E2023E9B09F00E003E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF2E1F23E9B09F00E003E0 /* ContentView.swift */; };
-		0CFF2E2323E9B09F00E003E0 /* myDesktopApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF2E2123E9B09F00E003E0 /* myDesktopApp.xcdatamodeld */; };
-		0CFF2E2523E9B09F00E003E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF2E2423E9B09F00E003E0 /* Assets.xcassets */; };
-		0CFF2E2823E9B09F00E003E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF2E2723E9B09F00E003E0 /* Preview Assets.xcassets */; };
-		0CFF2E2B23E9B09F00E003E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF2E2923E9B09F00E003E0 /* Main.storyboard */; };
-		0CFF2E3723E9B09F00E003E0 /* myDesktopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF2E3623E9B09F00E003E0 /* myDesktopAppTests.swift */; };
-		0CFF2E4223E9B0A000E003E0 /* myDesktopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF2E4123E9B0A000E003E0 /* myDesktopAppUITests.swift */; };
+		0CE6B14023EB1622001CBC03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6B13F23EB1622001CBC03 /* AppDelegate.swift */; };
+		0CE6B14223EB1622001CBC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6B14123EB1622001CBC03 /* ViewController.swift */; };
+		0CE6B14523EB1622001CBC03 /* myDesktopApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6B14323EB1622001CBC03 /* myDesktopApp.xcdatamodeld */; };
+		0CE6B14723EB1624001CBC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE6B14623EB1624001CBC03 /* Assets.xcassets */; };
+		0CE6B14A23EB1624001CBC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE6B14823EB1624001CBC03 /* Main.storyboard */; };
+		0CE6B15623EB1624001CBC03 /* myDesktopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6B15523EB1624001CBC03 /* myDesktopAppTests.swift */; };
+		0CE6B16123EB1624001CBC03 /* myDesktopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6B16023EB1624001CBC03 /* myDesktopAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CFF2E3323E9B09F00E003E0 /* PBXContainerItemProxy */ = {
+		0CE6B15223EB1624001CBC03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CFF2E1223E9B09E00E003E0 /* Project object */;
+			containerPortal = 0CE6B13423EB1622001CBC03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0CFF2E1923E9B09E00E003E0;
+			remoteGlobalIDString = 0CE6B13B23EB1622001CBC03;
 			remoteInfo = myDesktopApp;
 		};
-		0CFF2E3E23E9B0A000E003E0 /* PBXContainerItemProxy */ = {
+		0CE6B15D23EB1624001CBC03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CFF2E1223E9B09E00E003E0 /* Project object */;
+			containerPortal = 0CE6B13423EB1622001CBC03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0CFF2E1923E9B09E00E003E0;
+			remoteGlobalIDString = 0CE6B13B23EB1622001CBC03;
 			remoteInfo = myDesktopApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CFF2E1A23E9B09E00E003E0 /* myDesktopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myDesktopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CFF2E1D23E9B09F00E003E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CFF2E1F23E9B09F00E003E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0CFF2E2223E9B09F00E003E0 /* myDesktopApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myDesktopApp.xcdatamodel; sourceTree = "<group>"; };
-		0CFF2E2423E9B09F00E003E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0CFF2E2723E9B09F00E003E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0CFF2E2A23E9B09F00E003E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0CFF2E2C23E9B09F00E003E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CFF2E2D23E9B09F00E003E0 /* myDesktopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myDesktopApp.entitlements; sourceTree = "<group>"; };
-		0CFF2E3223E9B09F00E003E0 /* myDesktopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myDesktopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CFF2E3623E9B09F00E003E0 /* myDesktopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesktopAppTests.swift; sourceTree = "<group>"; };
-		0CFF2E3823E9B09F00E003E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CFF2E3D23E9B0A000E003E0 /* myDesktopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myDesktopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CFF2E4123E9B0A000E003E0 /* myDesktopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesktopAppUITests.swift; sourceTree = "<group>"; };
-		0CFF2E4323E9B0A000E003E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE6B13C23EB1622001CBC03 /* myDesktopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myDesktopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE6B13F23EB1622001CBC03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CE6B14123EB1622001CBC03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CE6B14423EB1622001CBC03 /* myDesktopApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myDesktopApp.xcdatamodel; sourceTree = "<group>"; };
+		0CE6B14623EB1624001CBC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CE6B14923EB1624001CBC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CE6B14B23EB1624001CBC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE6B14C23EB1624001CBC03 /* myDesktopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myDesktopApp.entitlements; sourceTree = "<group>"; };
+		0CE6B15123EB1624001CBC03 /* myDesktopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myDesktopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE6B15523EB1624001CBC03 /* myDesktopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesktopAppTests.swift; sourceTree = "<group>"; };
+		0CE6B15723EB1624001CBC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE6B15C23EB1624001CBC03 /* myDesktopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myDesktopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE6B16023EB1624001CBC03 /* myDesktopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesktopAppUITests.swift; sourceTree = "<group>"; };
+		0CE6B16223EB1624001CBC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CFF2E1723E9B09E00E003E0 /* Frameworks */ = {
+		0CE6B13923EB1622001CBC03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E2F23E9B09F00E003E0 /* Frameworks */ = {
+		0CE6B14E23EB1624001CBC03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E3A23E9B0A000E003E0 /* Frameworks */ = {
+		0CE6B15923EB1624001CBC03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,63 +75,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CFF2E1123E9B09E00E003E0 = {
+		0CE6B13323EB1622001CBC03 = {
 			isa = PBXGroup;
 			children = (
-				0CFF2E1C23E9B09E00E003E0 /* myDesktopApp */,
-				0CFF2E3523E9B09F00E003E0 /* myDesktopAppTests */,
-				0CFF2E4023E9B0A000E003E0 /* myDesktopAppUITests */,
-				0CFF2E1B23E9B09E00E003E0 /* Products */,
+				0CE6B13E23EB1622001CBC03 /* myDesktopApp */,
+				0CE6B15423EB1624001CBC03 /* myDesktopAppTests */,
+				0CE6B15F23EB1624001CBC03 /* myDesktopAppUITests */,
+				0CE6B13D23EB1622001CBC03 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0CFF2E1B23E9B09E00E003E0 /* Products */ = {
+		0CE6B13D23EB1622001CBC03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CFF2E1A23E9B09E00E003E0 /* myDesktopApp.app */,
-				0CFF2E3223E9B09F00E003E0 /* myDesktopAppTests.xctest */,
-				0CFF2E3D23E9B0A000E003E0 /* myDesktopAppUITests.xctest */,
+				0CE6B13C23EB1622001CBC03 /* myDesktopApp.app */,
+				0CE6B15123EB1624001CBC03 /* myDesktopAppTests.xctest */,
+				0CE6B15C23EB1624001CBC03 /* myDesktopAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0CFF2E1C23E9B09E00E003E0 /* myDesktopApp */ = {
+		0CE6B13E23EB1622001CBC03 /* myDesktopApp */ = {
 			isa = PBXGroup;
 			children = (
-				0CFF2E1D23E9B09F00E003E0 /* AppDelegate.swift */,
-				0CFF2E1F23E9B09F00E003E0 /* ContentView.swift */,
-				0CFF2E2423E9B09F00E003E0 /* Assets.xcassets */,
-				0CFF2E2923E9B09F00E003E0 /* Main.storyboard */,
-				0CFF2E2C23E9B09F00E003E0 /* Info.plist */,
-				0CFF2E2D23E9B09F00E003E0 /* myDesktopApp.entitlements */,
-				0CFF2E2123E9B09F00E003E0 /* myDesktopApp.xcdatamodeld */,
-				0CFF2E2623E9B09F00E003E0 /* Preview Content */,
+				0CE6B13F23EB1622001CBC03 /* AppDelegate.swift */,
+				0CE6B14123EB1622001CBC03 /* ViewController.swift */,
+				0CE6B14623EB1624001CBC03 /* Assets.xcassets */,
+				0CE6B14823EB1624001CBC03 /* Main.storyboard */,
+				0CE6B14B23EB1624001CBC03 /* Info.plist */,
+				0CE6B14C23EB1624001CBC03 /* myDesktopApp.entitlements */,
+				0CE6B14323EB1622001CBC03 /* myDesktopApp.xcdatamodeld */,
 			);
 			path = myDesktopApp;
 			sourceTree = "<group>";
 		};
-		0CFF2E2623E9B09F00E003E0 /* Preview Content */ = {
+		0CE6B15423EB1624001CBC03 /* myDesktopAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0CFF2E2723E9B09F00E003E0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0CFF2E3523E9B09F00E003E0 /* myDesktopAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				0CFF2E3623E9B09F00E003E0 /* myDesktopAppTests.swift */,
-				0CFF2E3823E9B09F00E003E0 /* Info.plist */,
+				0CE6B15523EB1624001CBC03 /* myDesktopAppTests.swift */,
+				0CE6B15723EB1624001CBC03 /* Info.plist */,
 			);
 			path = myDesktopAppTests;
 			sourceTree = "<group>";
 		};
-		0CFF2E4023E9B0A000E003E0 /* myDesktopAppUITests */ = {
+		0CE6B15F23EB1624001CBC03 /* myDesktopAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0CFF2E4123E9B0A000E003E0 /* myDesktopAppUITests.swift */,
-				0CFF2E4323E9B0A000E003E0 /* Info.plist */,
+				0CE6B16023EB1624001CBC03 /* myDesktopAppUITests.swift */,
+				0CE6B16223EB1624001CBC03 /* Info.plist */,
 			);
 			path = myDesktopAppUITests;
 			sourceTree = "<group>";
@@ -141,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CFF2E1923E9B09E00E003E0 /* myDesktopApp */ = {
+		0CE6B13B23EB1622001CBC03 /* myDesktopApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFF2E4623E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopApp" */;
+			buildConfigurationList = 0CE6B16523EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopApp" */;
 			buildPhases = (
-				0CFF2E1623E9B09E00E003E0 /* Sources */,
-				0CFF2E1723E9B09E00E003E0 /* Frameworks */,
-				0CFF2E1823E9B09E00E003E0 /* Resources */,
+				0CE6B13823EB1622001CBC03 /* Sources */,
+				0CE6B13923EB1622001CBC03 /* Frameworks */,
+				0CE6B13A23EB1622001CBC03 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -155,69 +144,69 @@
 			);
 			name = myDesktopApp;
 			productName = myDesktopApp;
-			productReference = 0CFF2E1A23E9B09E00E003E0 /* myDesktopApp.app */;
+			productReference = 0CE6B13C23EB1622001CBC03 /* myDesktopApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0CFF2E3123E9B09F00E003E0 /* myDesktopAppTests */ = {
+		0CE6B15023EB1624001CBC03 /* myDesktopAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFF2E4923E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopAppTests" */;
+			buildConfigurationList = 0CE6B16823EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopAppTests" */;
 			buildPhases = (
-				0CFF2E2E23E9B09F00E003E0 /* Sources */,
-				0CFF2E2F23E9B09F00E003E0 /* Frameworks */,
-				0CFF2E3023E9B09F00E003E0 /* Resources */,
+				0CE6B14D23EB1624001CBC03 /* Sources */,
+				0CE6B14E23EB1624001CBC03 /* Frameworks */,
+				0CE6B14F23EB1624001CBC03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0CFF2E3423E9B09F00E003E0 /* PBXTargetDependency */,
+				0CE6B15323EB1624001CBC03 /* PBXTargetDependency */,
 			);
 			name = myDesktopAppTests;
 			productName = myDesktopAppTests;
-			productReference = 0CFF2E3223E9B09F00E003E0 /* myDesktopAppTests.xctest */;
+			productReference = 0CE6B15123EB1624001CBC03 /* myDesktopAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0CFF2E3C23E9B0A000E003E0 /* myDesktopAppUITests */ = {
+		0CE6B15B23EB1624001CBC03 /* myDesktopAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFF2E4C23E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopAppUITests" */;
+			buildConfigurationList = 0CE6B16B23EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopAppUITests" */;
 			buildPhases = (
-				0CFF2E3923E9B0A000E003E0 /* Sources */,
-				0CFF2E3A23E9B0A000E003E0 /* Frameworks */,
-				0CFF2E3B23E9B0A000E003E0 /* Resources */,
+				0CE6B15823EB1624001CBC03 /* Sources */,
+				0CE6B15923EB1624001CBC03 /* Frameworks */,
+				0CE6B15A23EB1624001CBC03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0CFF2E3F23E9B0A000E003E0 /* PBXTargetDependency */,
+				0CE6B15E23EB1624001CBC03 /* PBXTargetDependency */,
 			);
 			name = myDesktopAppUITests;
 			productName = myDesktopAppUITests;
-			productReference = 0CFF2E3D23E9B0A000E003E0 /* myDesktopAppUITests.xctest */;
+			productReference = 0CE6B15C23EB1624001CBC03 /* myDesktopAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0CFF2E1223E9B09E00E003E0 /* Project object */ = {
+		0CE6B13423EB1622001CBC03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Tahsin Jahin Khalid";
 				TargetAttributes = {
-					0CFF2E1923E9B09E00E003E0 = {
+					0CE6B13B23EB1622001CBC03 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					0CFF2E3123E9B09F00E003E0 = {
+					0CE6B15023EB1624001CBC03 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 0CFF2E1923E9B09E00E003E0;
+						TestTargetID = 0CE6B13B23EB1622001CBC03;
 					};
-					0CFF2E3C23E9B0A000E003E0 = {
+					0CE6B15B23EB1624001CBC03 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 0CFF2E1923E9B09E00E003E0;
+						TestTargetID = 0CE6B13B23EB1622001CBC03;
 					};
 				};
 			};
-			buildConfigurationList = 0CFF2E1523E9B09E00E003E0 /* Build configuration list for PBXProject "myDesktopApp" */;
+			buildConfigurationList = 0CE6B13723EB1622001CBC03 /* Build configuration list for PBXProject "myDesktopApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,37 +214,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 0CFF2E1123E9B09E00E003E0;
-			productRefGroup = 0CFF2E1B23E9B09E00E003E0 /* Products */;
+			mainGroup = 0CE6B13323EB1622001CBC03;
+			productRefGroup = 0CE6B13D23EB1622001CBC03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CFF2E1923E9B09E00E003E0 /* myDesktopApp */,
-				0CFF2E3123E9B09F00E003E0 /* myDesktopAppTests */,
-				0CFF2E3C23E9B0A000E003E0 /* myDesktopAppUITests */,
+				0CE6B13B23EB1622001CBC03 /* myDesktopApp */,
+				0CE6B15023EB1624001CBC03 /* myDesktopAppTests */,
+				0CE6B15B23EB1624001CBC03 /* myDesktopAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0CFF2E1823E9B09E00E003E0 /* Resources */ = {
+		0CE6B13A23EB1622001CBC03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFF2E2B23E9B09F00E003E0 /* Main.storyboard in Resources */,
-				0CFF2E2823E9B09F00E003E0 /* Preview Assets.xcassets in Resources */,
-				0CFF2E2523E9B09F00E003E0 /* Assets.xcassets in Resources */,
+				0CE6B14723EB1624001CBC03 /* Assets.xcassets in Resources */,
+				0CE6B14A23EB1624001CBC03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E3023E9B09F00E003E0 /* Resources */ = {
+		0CE6B14F23EB1624001CBC03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E3B23E9B0A000E003E0 /* Resources */ = {
+		0CE6B15A23EB1624001CBC03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,52 +253,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0CFF2E1623E9B09E00E003E0 /* Sources */ = {
+		0CE6B13823EB1622001CBC03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFF2E2023E9B09F00E003E0 /* ContentView.swift in Sources */,
-				0CFF2E1E23E9B09F00E003E0 /* AppDelegate.swift in Sources */,
-				0CFF2E2323E9B09F00E003E0 /* myDesktopApp.xcdatamodeld in Sources */,
+				0CE6B14223EB1622001CBC03 /* ViewController.swift in Sources */,
+				0CE6B14023EB1622001CBC03 /* AppDelegate.swift in Sources */,
+				0CE6B14523EB1622001CBC03 /* myDesktopApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E2E23E9B09F00E003E0 /* Sources */ = {
+		0CE6B14D23EB1624001CBC03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFF2E3723E9B09F00E003E0 /* myDesktopAppTests.swift in Sources */,
+				0CE6B15623EB1624001CBC03 /* myDesktopAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CFF2E3923E9B0A000E003E0 /* Sources */ = {
+		0CE6B15823EB1624001CBC03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFF2E4223E9B0A000E003E0 /* myDesktopAppUITests.swift in Sources */,
+				0CE6B16123EB1624001CBC03 /* myDesktopAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CFF2E3423E9B09F00E003E0 /* PBXTargetDependency */ = {
+		0CE6B15323EB1624001CBC03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CFF2E1923E9B09E00E003E0 /* myDesktopApp */;
-			targetProxy = 0CFF2E3323E9B09F00E003E0 /* PBXContainerItemProxy */;
+			target = 0CE6B13B23EB1622001CBC03 /* myDesktopApp */;
+			targetProxy = 0CE6B15223EB1624001CBC03 /* PBXContainerItemProxy */;
 		};
-		0CFF2E3F23E9B0A000E003E0 /* PBXTargetDependency */ = {
+		0CE6B15E23EB1624001CBC03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CFF2E1923E9B09E00E003E0 /* myDesktopApp */;
-			targetProxy = 0CFF2E3E23E9B0A000E003E0 /* PBXContainerItemProxy */;
+			target = 0CE6B13B23EB1622001CBC03 /* myDesktopApp */;
+			targetProxy = 0CE6B15D23EB1624001CBC03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0CFF2E2923E9B09F00E003E0 /* Main.storyboard */ = {
+		0CE6B14823EB1624001CBC03 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0CFF2E2A23E9B09F00E003E0 /* Base */,
+				0CE6B14923EB1624001CBC03 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -318,7 +306,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0CFF2E4423E9B0A000E003E0 /* Debug */ = {
+		0CE6B16323EB1624001CBC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,7 +366,7 @@
 			};
 			name = Debug;
 		};
-		0CFF2E4523E9B0A000E003E0 /* Release */ = {
+		0CE6B16423EB1624001CBC03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,53 +419,47 @@
 			};
 			name = Release;
 		};
-		0CFF2E4723E9B0A000E003E0 /* Debug */ = {
+		0CE6B16623EB1624001CBC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = myDesktopApp/myDesktopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"myDesktopApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Y6XH6MHQLL;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = myDesktopApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = LabNucleon.myDesktopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		0CFF2E4823E9B0A000E003E0 /* Release */ = {
+		0CE6B16723EB1624001CBC03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = myDesktopApp/myDesktopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"myDesktopApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Y6XH6MHQLL;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = myDesktopApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = LabNucleon.myDesktopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		0CFF2E4A23E9B0A000E003E0 /* Debug */ = {
+		0CE6B16923EB1624001CBC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -499,7 +481,7 @@
 			};
 			name = Debug;
 		};
-		0CFF2E4B23E9B0A000E003E0 /* Release */ = {
+		0CE6B16A23EB1624001CBC03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -521,7 +503,7 @@
 			};
 			name = Release;
 		};
-		0CFF2E4D23E9B0A000E003E0 /* Debug */ = {
+		0CE6B16C23EB1624001CBC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -541,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		0CFF2E4E23E9B0A000E003E0 /* Release */ = {
+		0CE6B16D23EB1624001CBC03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -564,38 +546,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CFF2E1523E9B09E00E003E0 /* Build configuration list for PBXProject "myDesktopApp" */ = {
+		0CE6B13723EB1622001CBC03 /* Build configuration list for PBXProject "myDesktopApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CFF2E4423E9B0A000E003E0 /* Debug */,
-				0CFF2E4523E9B0A000E003E0 /* Release */,
+				0CE6B16323EB1624001CBC03 /* Debug */,
+				0CE6B16423EB1624001CBC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFF2E4623E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopApp" */ = {
+		0CE6B16523EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CFF2E4723E9B0A000E003E0 /* Debug */,
-				0CFF2E4823E9B0A000E003E0 /* Release */,
+				0CE6B16623EB1624001CBC03 /* Debug */,
+				0CE6B16723EB1624001CBC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFF2E4923E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopAppTests" */ = {
+		0CE6B16823EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CFF2E4A23E9B0A000E003E0 /* Debug */,
-				0CFF2E4B23E9B0A000E003E0 /* Release */,
+				0CE6B16923EB1624001CBC03 /* Debug */,
+				0CE6B16A23EB1624001CBC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFF2E4C23E9B0A000E003E0 /* Build configuration list for PBXNativeTarget "myDesktopAppUITests" */ = {
+		0CE6B16B23EB1624001CBC03 /* Build configuration list for PBXNativeTarget "myDesktopAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CFF2E4D23E9B0A000E003E0 /* Debug */,
-				0CFF2E4E23E9B0A000E003E0 /* Release */,
+				0CE6B16C23EB1624001CBC03 /* Debug */,
+				0CE6B16D23EB1624001CBC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -603,17 +585,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0CFF2E2123E9B09F00E003E0 /* myDesktopApp.xcdatamodeld */ = {
+		0CE6B14323EB1622001CBC03 /* myDesktopApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0CFF2E2223E9B09F00E003E0 /* myDesktopApp.xcdatamodel */,
+				0CE6B14423EB1622001CBC03 /* myDesktopApp.xcdatamodel */,
 			);
-			currentVersion = 0CFF2E2223E9B09F00E003E0 /* myDesktopApp.xcdatamodel */;
+			currentVersion = 0CE6B14423EB1622001CBC03 /* myDesktopApp.xcdatamodel */;
 			path = myDesktopApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 0CFF2E1223E9B09E00E003E0 /* Project object */;
+	rootObject = 0CE6B13423EB1622001CBC03 /* Project object */;
 }
