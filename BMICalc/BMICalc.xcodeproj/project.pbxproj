@@ -16,6 +16,7 @@
 		18652DC1272B39640093EA2C /* BMICalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18652DC0272B39640093EA2C /* BMICalcTests.swift */; };
 		18652DCB272B39640093EA2C /* BMICalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18652DCA272B39640093EA2C /* BMICalcUITests.swift */; };
 		18652DCD272B39640093EA2C /* BMICalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18652DCC272B39640093EA2C /* BMICalcUITestsLaunchTests.swift */; };
+		18652DDD272B495C0093EA2C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18652DDC272B495C0093EA2C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18652DC6272B39640093EA2C /* BMICalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMICalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18652DCA272B39640093EA2C /* BMICalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcUITests.swift; sourceTree = "<group>"; };
 		18652DCC272B39640093EA2C /* BMICalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18652DDC272B495C0093EA2C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				18652DB2272B39640093EA2C /* Assets.xcassets */,
 				18652DB4272B39640093EA2C /* LaunchScreen.storyboard */,
 				18652DB7272B39640093EA2C /* Info.plist */,
+				18652DDC272B495C0093EA2C /* ResultViewController.swift */,
 			);
 			path = BMICalc;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				18652DAE272B39600093EA2C /* ViewController.swift in Sources */,
 				18652DAA272B39600093EA2C /* AppDelegate.swift in Sources */,
 				18652DAC272B39600093EA2C /* SceneDelegate.swift in Sources */,
+				18652DDD272B495C0093EA2C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
