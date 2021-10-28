@@ -101,10 +101,10 @@
 		18652DA8272B39600093EA2C /* BMICalc */ = {
 			isa = PBXGroup;
 			children = (
-				18652DDB272B3F2D0093EA2C /* Controllers */,
 				18652DD9272B3F050093EA2C /* Models */,
-				18652DA9272B39600093EA2C /* AppDelegate.swift */,
 				18652DDA272B3F0C0093EA2C /* Views */,
+				18652DDB272B3F2D0093EA2C /* Controllers */,
+				18652DA9272B39600093EA2C /* AppDelegate.swift */,
 				18652DAB272B39600093EA2C /* SceneDelegate.swift */,
 				18652DAD272B39600093EA2C /* ViewController.swift */,
 				18652DAF272B39600093EA2C /* Main.storyboard */,
