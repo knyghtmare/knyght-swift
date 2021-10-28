@@ -21,6 +21,7 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func ReturnToMainView(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     
