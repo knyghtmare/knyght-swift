@@ -9,12 +9,12 @@ import Foundation
 
 // print("Hello, World!")
 
-let dog = Animal()
+let dog = Animal(health: 20, attack_power: 8)
 
 dog.move()
 
-// dragon
+var wolf = Wolf(health: 40, attack_power: 25)
 
-var wolf = Wolf()
+wolf.attack()
 
 wolf.fire_breath(damage: 70)

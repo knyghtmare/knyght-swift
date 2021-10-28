@@ -9,8 +9,13 @@ import Foundation
 
 class Animal
 {
-    var health: Int = 40
-    var attack_power: Int = 8
+    var health: Int
+    var attack_power: Int
+    
+    init(health: Int, attack_power: Int) {
+        self.health = health
+        self.attack_power = attack_power
+    }
     
     func move()
     {

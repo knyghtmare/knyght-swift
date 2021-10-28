@@ -15,7 +15,7 @@ class Wolf: Animal {
     //super.attack_power
     //var attack_power: Int = 25
     
-    var armour: Int = 50
+    // var armour: Int = 50
     
     func fire_breath(damage: Int) {
         print("You are incinerated for \(damage) physical damage.")
