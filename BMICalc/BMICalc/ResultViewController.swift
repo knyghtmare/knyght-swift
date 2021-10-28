@@ -8,12 +8,21 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    var VarBMIValue: String?
+    
+    @IBOutlet weak var BMILabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        BMILabel.text = VarBMIValue
     }
+    
+    @IBAction func ReturnToMainView(_ sender: UIButton) {
+    }
+    
     
 
     /*

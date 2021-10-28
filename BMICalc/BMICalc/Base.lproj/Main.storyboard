@@ -95,6 +95,7 @@
                         <outlet property="heightVal" destination="Ofe-TU-7bm" id="VV5-km-csi"/>
                         <outlet property="weightSlider" destination="tGL-oy-bAq" id="8Xj-dj-bXt"/>
                         <outlet property="weightVal" destination="zkG-VO-RK6" id="aSe-5a-cLY"/>
+                        <segue destination="5Zl-eg-sf7" kind="presentation" identifier="goToResult" id="0R1-7H-vrp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,7 +107,7 @@
             <objects>
                 <viewController id="5Zl-eg-sf7" customClass="ResultViewController" customModule="BMICalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dtB-yD-EwV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bggenerator_com" translatesAutoresizingMaskIntoConstraints="NO" id="X1h-cu-aof">
@@ -129,11 +130,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Recalculate">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ReturnToMainView:" destination="5Zl-eg-sf7" eventType="touchUpInside" id="l9v-Hz-cxm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Xf-iQ-bdh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="BMILabel" destination="X6E-c1-EMr" id="ke8-cH-4iS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ds1-au-sCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
