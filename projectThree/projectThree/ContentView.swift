@@ -9,12 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .font(.title)
-            .fontWeight(.bold)
-            .foregroundColor(Color.green)
-            .multilineTextAlignment(.center)
-            .padding([.leading, .bottom, .trailing], 20.0)
+        
+        ZStack {
+            VStack {
+                Spacer()
+                Text("Hello!")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.green)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 20.0)
+                Text("Welcome to my App!")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.green)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 20.0)
+                Spacer()
+            }
+        }
+
     }
 }
 
