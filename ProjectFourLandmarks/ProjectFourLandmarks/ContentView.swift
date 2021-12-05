@@ -9,17 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Hello, Jahin!")
-                .fontWeight(.bold)
-            .font(.title)
-            HStack {
-                Text("Welcome to your App").font(.subheadline)
-                Spacer()
-                Text("Hong Kong").font(.subheadline)
+        VStack {
+            mapviewtest().frame(height: 300).ignoresSafeArea(edges: .top)
+            
+            CircleImage()
+                .padding(.bottom, -130.0)
+                .offset(y: -130.0)
+            
+            VStack(alignment: .leading) {
+                Text("Hello, Jahin!")
+                    .fontWeight(.bold)
+                .font(.title)
+                HStack {
+                    Text("Welcome to your App").font(.subheadline)
+                    Spacer()
+                    Text("Home").font(.subheadline)
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                
+                Divider()
+
+                Text("About Me")
+                                    .font(.title2)
+                Text("Descriptive text goes here.")
+
             }
+            .padding(.all)
+            
+            Spacer()
         }
-        .padding(.all)
     }
 }
 
