@@ -16,6 +16,7 @@
 		18F2C9FF275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2C9FE275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift */; };
 		18F2CA0C275D7A71001FE28E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2CA0B275D7A71001FE28E /* CircleImage.swift */; };
 		18F2CA0E275D7CC9001FE28E /* mapviewtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2CA0D275D7CC9001FE28E /* mapviewtest.swift */; };
+		18F2CA12275D82FA001FE28E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2CA11275D82FA001FE28E /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		18F2C9FE275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFourLandmarksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18F2CA0B275D7A71001FE28E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		18F2CA0D275D7CC9001FE28E /* mapviewtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapviewtest.swift; sourceTree = "<group>"; };
+		18F2CA11275D82FA001FE28E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				18F2C9E1275D7605001FE28E /* ProjectFourLandmarksApp.swift */,
 				18F2C9E3275D7605001FE28E /* ContentView.swift */,
+				18F2CA11275D82FA001FE28E /* Landmark.swift */,
 				18F2C9E5275D7606001FE28E /* Assets.xcassets */,
 				18F2C9E7275D7606001FE28E /* Preview Content */,
 				18F2CA0B275D7A71001FE28E /* CircleImage.swift */,
@@ -267,6 +270,7 @@
 				18F2CA0E275D7CC9001FE28E /* mapviewtest.swift in Sources */,
 				18F2C9E2275D7605001FE28E /* ProjectFourLandmarksApp.swift in Sources */,
 				18F2CA0C275D7A71001FE28E /* CircleImage.swift in Sources */,
+				18F2CA12275D82FA001FE28E /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
