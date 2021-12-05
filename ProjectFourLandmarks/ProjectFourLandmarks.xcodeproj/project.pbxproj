@@ -15,6 +15,7 @@
 		18F2C9FD275D7607001FE28E /* ProjectFourLandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2C9FC275D7607001FE28E /* ProjectFourLandmarksUITests.swift */; };
 		18F2C9FF275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2C9FE275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift */; };
 		18F2CA0C275D7A71001FE28E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2CA0B275D7A71001FE28E /* CircleImage.swift */; };
+		18F2CA0E275D7CC9001FE28E /* mapviewtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2CA0D275D7CC9001FE28E /* mapviewtest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		18F2C9FC275D7607001FE28E /* ProjectFourLandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFourLandmarksUITests.swift; sourceTree = "<group>"; };
 		18F2C9FE275D7607001FE28E /* ProjectFourLandmarksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFourLandmarksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18F2CA0B275D7A71001FE28E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		18F2CA0D275D7CC9001FE28E /* mapviewtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapviewtest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				18F2C9E5275D7606001FE28E /* Assets.xcassets */,
 				18F2C9E7275D7606001FE28E /* Preview Content */,
 				18F2CA0B275D7A71001FE28E /* CircleImage.swift */,
+				18F2CA0D275D7CC9001FE28E /* mapviewtest.swift */,
 			);
 			path = ProjectFourLandmarks;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F2C9E4275D7605001FE28E /* ContentView.swift in Sources */,
+				18F2CA0E275D7CC9001FE28E /* mapviewtest.swift in Sources */,
 				18F2C9E2275D7605001FE28E /* ProjectFourLandmarksApp.swift in Sources */,
 				18F2CA0C275D7A71001FE28E /* CircleImage.swift in Sources */,
 			);
