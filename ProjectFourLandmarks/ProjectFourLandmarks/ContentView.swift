@@ -33,6 +33,8 @@ struct ContentView: View {
                 Text("About Me")
                                     .font(.title2)
                 Text("Descriptive text goes here.")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
 
             }
             .padding(.all)
