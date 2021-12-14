@@ -20,11 +20,15 @@ struct ContentView: View {
                     .font(.title)
                 HStack {
                     Text(/*@START_MENU_TOKEN@*/"Dhanmondi"/*@END_MENU_TOKEN@*/)
-                        .font(.subheadline)
                     Spacer()
                     Text(/*@START_MENU_TOKEN@*/"Dhaka City"/*@END_MENU_TOKEN@*/)
-                        .font(.subheadline)
                 }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Divider()
+                Text("About Turtle Rock")
+                                    .font(.title2)
+                Text("This is a shopping complex in Dhanmondi, Dhaka City. Has lots of shops and food places inside.")
             }
             .padding(.all)
             // push to the top of screen
