@@ -102,13 +102,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1880063D2768E11D0056EDA6 /* Models */ = {
+		1880063D2768E11D0056EDA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				188006362768DF450056EDA6 /* Landmark.swift */,
 				188006382768E06A0056EDA6 /* ModelData.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		18A6FBBF2768CC7600B82AF8 = {
@@ -138,7 +138,7 @@
 				1880063B2768E0EE0056EDA6 /* Views */,
 				1880063C2768E10E0056EDA6 /* Resources */,
 				18A6FBCF2768CC7900B82AF8 /* Assets.xcassets */,
-				1880063D2768E11D0056EDA6 /* Models */,
+				1880063D2768E11D0056EDA6 /* Model */,
 				18A6FBD12768CC7900B82AF8 /* Preview Content */,
 			);
 			path = CityPlaces;
