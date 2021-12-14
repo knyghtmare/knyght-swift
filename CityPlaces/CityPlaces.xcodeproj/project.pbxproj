@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		188006312768D7810056EDA6 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188006302768D7810056EDA6 /* ImageView.swift */; };
+		188006332768DABA0056EDA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188006322768DABA0056EDA6 /* MapView.swift */; };
 		18A6FBCC2768CC7700B82AF8 /* CityPlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6FBCB2768CC7700B82AF8 /* CityPlacesApp.swift */; };
 		18A6FBCE2768CC7700B82AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6FBCD2768CC7700B82AF8 /* ContentView.swift */; };
 		18A6FBD02768CC7900B82AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A6FBCF2768CC7900B82AF8 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		188006302768D7810056EDA6 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		188006322768DABA0056EDA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		18A6FBC82768CC7700B82AF8 /* CityPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6FBCB2768CC7700B82AF8 /* CityPlacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPlacesApp.swift; sourceTree = "<group>"; };
 		18A6FBCD2768CC7700B82AF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				18A6FBCB2768CC7700B82AF8 /* CityPlacesApp.swift */,
 				18A6FBCD2768CC7700B82AF8 /* ContentView.swift */,
 				188006302768D7810056EDA6 /* ImageView.swift */,
+				188006322768DABA0056EDA6 /* MapView.swift */,
 				18A6FBCF2768CC7900B82AF8 /* Assets.xcassets */,
 				18A6FBD12768CC7900B82AF8 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188006312768D7810056EDA6 /* ImageView.swift in Sources */,
+				188006332768DABA0056EDA6 /* MapView.swift in Sources */,
 				18A6FBCE2768CC7700B82AF8 /* ContentView.swift in Sources */,
 				18A6FBCC2768CC7700B82AF8 /* CityPlacesApp.swift in Sources */,
 			);
@@ -430,7 +434,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,7 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
