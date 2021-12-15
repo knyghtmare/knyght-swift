@@ -14,6 +14,9 @@
 		183C3F34276A692300C2740F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F33276A692200C2740F /* LocationManager.swift */; };
 		183C3F37276A6B1D00C2740F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F36276A6B1D00C2740F /* WelcomeView.swift */; };
 		183C3F39276A739400C2740F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F38276A739400C2740F /* LoadingView.swift */; };
+		183C3F3B276A760E00C2740F /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F3A276A760E00C2740F /* WeatherManager.swift */; };
+		183C3F3D276A7D4900C2740F /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F3C276A7D4900C2740F /* WeatherView.swift */; };
+		183C3F40276A7E2900C2740F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3F3F276A7E2900C2740F /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,10 @@
 		183C3F33276A692200C2740F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		183C3F36276A6B1D00C2740F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		183C3F38276A739400C2740F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		183C3F3A276A760E00C2740F /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherManager.swift; path = WeatherDemo/Views/WeatherManager.swift; sourceTree = SOURCE_ROOT; };
+		183C3F3C276A7D4900C2740F /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		183C3F3F276A7E2900C2740F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		183C3F41276A7E5000C2740F /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 		183C3F23276A656B00C2740F /* WeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				183C3F3E276A7E0E00C2740F /* ModelData */,
 				183C3F32276A690700C2740F /* Managers */,
 				183C3F24276A656B00C2740F /* WeatherDemoApp.swift */,
 				183C3F35276A6A9200C2740F /* Views */,
@@ -77,6 +85,7 @@
 		183C3F32276A690700C2740F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				183C3F3A276A760E00C2740F /* WeatherManager.swift */,
 				183C3F33276A692200C2740F /* LocationManager.swift */,
 			);
 			path = Managers;
@@ -86,10 +95,20 @@
 			isa = PBXGroup;
 			children = (
 				183C3F26276A656B00C2740F /* ContentView.swift */,
+				183C3F3C276A7D4900C2740F /* WeatherView.swift */,
 				183C3F38276A739400C2740F /* LoadingView.swift */,
 				183C3F36276A6B1D00C2740F /* WelcomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		183C3F3E276A7E0E00C2740F /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				183C3F3F276A7E2900C2740F /* ModelData.swift */,
+				183C3F41276A7E5000C2740F /* weatherData.json */,
+			);
+			path = ModelData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C3F3B276A760E00C2740F /* WeatherManager.swift in Sources */,
 				183C3F27276A656B00C2740F /* ContentView.swift in Sources */,
 				183C3F25276A656B00C2740F /* WeatherDemoApp.swift in Sources */,
 				183C3F34276A692300C2740F /* LocationManager.swift in Sources */,
 				183C3F39276A739400C2740F /* LoadingView.swift in Sources */,
+				183C3F40276A7E2900C2740F /* ModelData.swift in Sources */,
+				183C3F3D276A7D4900C2740F /* WeatherView.swift in Sources */,
 				183C3F37276A6B1D00C2740F /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
