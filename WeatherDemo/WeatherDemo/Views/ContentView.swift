@@ -17,7 +17,7 @@ struct ContentView: View {
             if let location = locationManager.location {
                 // Text("Your coordinates are: \(location.longitude), \(location.latitude)")
                 if let weather = weather {
-                    Text("Weather data has been fetched!")
+                    WeatherView(weather: weather)
                 } else {
                     LoadingView()
                         .task {

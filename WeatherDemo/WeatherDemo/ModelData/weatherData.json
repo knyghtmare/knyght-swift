@@ -1,2 +1,1 @@
-#  <#Title#>
-
+{"coord":{"lon":90.41,"lat":23.31},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"base":"stations","main":{"temp":21.03,"feels_like":20.89,"temp_min":21.03,"temp_max":21.03,"pressure":1015,"humidity":65,"sea_level":1015,"grnd_level":1014},"visibility":10000,"wind":{"speed":3.18,"deg":339,"gust":4.24},"clouds":{"all":26},"dt":1639598066,"sys":{"type":1,"id":9145,"country":"BD","sunrise":1639614766,"sunset":1639653310},"timezone":21600,"id":1191368,"name":"Pālang","cod":200}
