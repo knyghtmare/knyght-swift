@@ -24,6 +24,37 @@ struct WeatherView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Spacer()
+                
+                VStack {
+                    HStack {
+                        VStack(spacing: 20) {
+                            Image(systemName: "cloud")
+                                .font(.system(size: 40))
+                            
+                            Text("\(weather.weather[0].main)")
+                        }
+                        .frame(width: 150, alignment: .leading)
+                        
+                        Spacer()
+                        Text(weather.main.feels_like.roundDouble() + "°")
+                            .font(.system(size: 100))
+                            .fontWeight(.bold)
+                            .padding()
+                    }
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")) { image in image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 350)
+                    } placeholder: {
+                           ProgressView()
+                       }
+                    
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
