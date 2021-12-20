@@ -46,6 +46,13 @@ class AuthManager: ObservableObject {
             } catch {
                 // print the error description
                 print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.errorDesc = error.localizedDescription
+                    self.showAlert = true
+                    
+                    // reset the biometric type
+                    self.biometricType = .none
+                }
             }
         }
     }
