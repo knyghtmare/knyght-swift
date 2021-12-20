@@ -20,11 +20,16 @@ struct LoginView: View {
                 PrimaryButton(image: "faceid", text: "Login with FaceID")
                     .onTapGesture {
                         Task.init {
-                        authManager.authenticateWithBiometrics()
+                            await authManager.authenticateWithBiometrics()
                         }
                 }
             case .touchID:
                 PrimaryButton(image: "touchid", text: "Login with TouchID")
+                    .onTapGesture {
+                        Task.init {
+                            await authManager.authenticateWithBiometrics()
+                        }
+                }
             default:
                 PrimaryButton(image: "person.fill", text: "Login with credentials")
                  
