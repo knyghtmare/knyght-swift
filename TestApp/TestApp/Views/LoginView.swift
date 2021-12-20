@@ -18,6 +18,11 @@ struct LoginView: View {
             switch authManager.biometricType {
             case .faceID:
                 PrimaryButton(image: "faceid", text: "Login with FaceID")
+                    .onTapGesture {
+                        Task.init {
+                        authManager.authenticateWithBiometrics()
+                        }
+                }
             case .touchID:
                 PrimaryButton(image: "touchid", text: "Login with TouchID")
             default:
