@@ -17,6 +17,9 @@ struct ContentView: View {
             LoginView().environmentObject(authManager)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .alert(isPresented: $authManager.showAlert, content: {
+            Alert(title: Text("Error"), message: Text(authManager.errorDesc ?? "Error trying to login with credentials. Please Try Again"), dismissButton: .default(Text("Okay")))
+        })
         .edgesIgnoringSafeArea(.all)
     }
 }
