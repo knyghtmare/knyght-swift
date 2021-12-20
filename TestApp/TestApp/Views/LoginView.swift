@@ -14,7 +14,16 @@ struct LoginView: View {
         VStack(spacing: 40) {
             Title()
             
-            PrimaryButton(image: "faceid", text: "Login with FaceID")
+            // PrimaryButton(image: "faceid", text: "Login with FaceID")
+            switch authManager.biometricType {
+            case .faceID:
+                PrimaryButton(image: "faceid", text: "Login with FaceID")
+            case .touchID:
+                PrimaryButton(image: "touchid", text: "Login with TouchID")
+            default:
+                PrimaryButton(image: "person.fill", text: "Login with credentials")
+                 
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(LinearGradient(colors: [.black, .purple], startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -23,6 +32,10 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView().environmentObject(AuthManager())
+        Group {
+            LoginView().environmentObject(AuthManager())
+            LoginView().environmentObject(AuthManager()).previewDevice("iPhone 8")
+            LoginView().environmentObject(AuthManager()).previewDevice("iPod touch (7th generation)")
+        }
     }
 }
