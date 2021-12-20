@@ -15,6 +15,7 @@
 		18DB231A27711E4100EDB9DA /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB231927711E4100EDB9DA /* Title.swift */; };
 		18DB231C27711F0A00EDB9DA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB231B27711F0A00EDB9DA /* PrimaryButton.swift */; };
 		18DB231F2771217300EDB9DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB231E2771217300EDB9DA /* LoginView.swift */; };
+		18DB2321277122FA00EDB9DA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB2320277122FA00EDB9DA /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		18DB231927711E4100EDB9DA /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		18DB231B27711F0A00EDB9DA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		18DB231E2771217300EDB9DA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18DB2320277122FA00EDB9DA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = TestApp/Views/AuthManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				187BAA34276C126C00191815 /* TestAppApp.swift */,
+				187BAA42276C129200191815 /* Helpers */,
 				18DB231D2771202900EDB9DA /* Views */,
 				18DB231827711DCB00EDB9DA /* Components */,
-				187BAA42276C129200191815 /* Helpers */,
 				187BAA38276C126D00191815 /* Assets.xcassets */,
 				187BAA3A276C126D00191815 /* Preview Content */,
 			);
@@ -80,6 +82,7 @@
 		187BAA42276C129200191815 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				18DB2320277122FA00EDB9DA /* AuthManager.swift */,
 				187BAA43276C12A200191815 /* Button.swift */,
 			);
 			path = Helpers;
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DB231F2771217300EDB9DA /* LoginView.swift in Sources */,
+				18DB2321277122FA00EDB9DA /* AuthManager.swift in Sources */,
 				18DB231A27711E4100EDB9DA /* Title.swift in Sources */,
 				187BAA37276C126C00191815 /* ContentView.swift in Sources */,
 				18DB231C27711F0A00EDB9DA /* PrimaryButton.swift in Sources */,
@@ -311,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
