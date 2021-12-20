@@ -14,6 +14,12 @@ class AuthManager: ObservableObject {
     
     private(set) var canEvaluatePolicy = false
     
+    // make a auth check var
+    @Published private(set) var isAuthenicated = false
+    @Published private(set) var errorDesc: String?
+    
+    @Published var showAlert = false
+    
     init() {
         getBiometricType()
     }
@@ -21,5 +27,26 @@ class AuthManager: ObservableObject {
     func getBiometricType() {
         context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         biometricType = context.biometryType
+    }
+    
+    func authenticateWithBiometrics() async {
+        context = LAContext()
+        
+        if canEvaluatePolicy {
+            let reason = "Log into your account"
+            
+            do {
+                let success = try await context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason)
+                
+                if success {
+                    DispatchQueue.main.async {
+                        self.isAuthenicated = true
+                    }
+                }
+            } catch {
+                // print the error description
+                print(error.localizedDescription)
+            }
+        }
     }
 }
