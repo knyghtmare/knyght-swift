@@ -10,4 +10,11 @@ import LocalAuthentication
 
 class AuthManager: ObservableObject {
     private(set) var context = LAContext()
+    @Published private(set) var biometricType: LABiometryType = .none
+    
+    private(set) var canEvaluatePolicy = false
+    
+    func getBiometricType() {
+        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+    }
 }
