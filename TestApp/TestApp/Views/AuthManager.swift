@@ -14,7 +14,12 @@ class AuthManager: ObservableObject {
     
     private(set) var canEvaluatePolicy = false
     
+    init() {
+        getBiometricType()
+    }
+    
     func getBiometricType() {
         context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        biometricType = context.biometryType
     }
 }
