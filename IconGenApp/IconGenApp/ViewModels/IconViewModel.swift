@@ -9,5 +9,5 @@ import SwiftUI
 
 class IconViewModel: ObservableObject {
     // MARK: Selected Image for Icon
-    @Published var pickedImage: NSImage 
+    @Published var pickedImage: NSImage?
 }

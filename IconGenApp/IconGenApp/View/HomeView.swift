@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  IconGenApp
 //
 //  Created by Tahsin Jahin Khalid on 28/1/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     @StateObject var iconModel: IconViewModel = IconViewModel()
     
     // MARK: Enviroment Values for adopting UI for light/dark modes
@@ -34,8 +34,8 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }
