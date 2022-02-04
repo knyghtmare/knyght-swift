@@ -9,8 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Welcome to the CheckSplitApp!")
-            .padding(30)
+        Form {
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            Section {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+        }
     }
 }
 
