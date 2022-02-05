@@ -18,27 +18,98 @@ struct ContentView: View {
     // tip percentage
     @State private var tipPercentage = 20
     
+    // to make the keypad vanish after entering amount
+    @FocusState private var amountIsFocused: Bool
+    
     // possible tip percentage values
     let tipPercentages = [10, 15, 20, 25, 0]
+    
+    // calculator function
+    // MARK: function to calculate the total amount per person
+    var totalPerPerson: Double {
+        // calculate the total per person here
+        let peopleCount = Double(numPeople + 2)
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        let grandTotal = checkAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+
+        return amountPerPerson
+    }
+    
+    var showTipVal: Double {
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        return tipValue
+    }
+    
+    var showGrandTotal: Double {
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        let grandTotal = checkAmount + tipValue
+        return grandTotal
+    }
     
     var body: some View {
         NavigationView {
             Form {
-                TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
-                    .keyboardType(.decimalPad)
-                Picker("Number of people", selection: $numPeople) {
-                    ForEach(2 ..< 100) {
-                        Text("\($0) people")
+                Section {
+                    TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                } header: {
+                    Text("Enter Amount:")
+                }
+                Section {
+                    Picker("Percentage of Tips:", selection: $tipPercentage) {
+                        ForEach(tipPercentages, id: \.self) {
+                            Text($0, format: .percent)
+                        }
+                }
+                .pickerStyle(.segmented)
+                } header: {
+                    Text("How much tip do you want to leave?")
+                }
+                Section {
+                    Picker("Number of people", selection: $numPeople) {
+                        ForEach(2 ..< 100) {
+                            Text("\($0) people")
+                        }
                     }
                 }
-                /*
                 Section {
-                    Text(checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    Text(showTipVal, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                } header: {
+                    Text("Tip Value")
                 }
-                */
+                Section {
+                    Text(showGrandTotal, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                } header: {
+                    Text("Grand Total value")
+                }
+                Section {
+                    Text(totalPerPerson, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                } header: {
+                    Text("Amount Per Person")
+                }
             }
-        }.navigationTitle("CheckSplit")
-        .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("CheckSplit")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button("Done") {
+                        amountIsFocused = false
+                    }
+                }
+            }
+            /*
+            Section {
+                Text(checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+            }
+            */
+        }
     }
 }
 
