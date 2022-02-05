@@ -24,14 +24,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section {
-                    TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
-                        .keyboardType(.decimalPad)
-                    Picker("Number of people", selection: $numPeople) {
-                            ForEach(2 ..< 30) {
-                                Text("\($0) people")
-                            }
-                        }
+                TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    .keyboardType(.decimalPad)
+                Picker("Number of people", selection: $numPeople) {
+                    ForEach(2 ..< 100) {
+                        Text("\($0) people")
+                    }
                 }
                 /*
                 Section {
@@ -39,8 +37,7 @@ struct ContentView: View {
                 }
                 */
             }
-        }
-        .navigationTitle("CheckSplit")
+        }.navigationTitle("CheckSplit")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
