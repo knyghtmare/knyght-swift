@@ -26,10 +26,18 @@ struct ContentView: View {
             Form {
                 Section {
                     TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    Picker("Number of people", selection: $numPeople) {
+                            ForEach(2 ..< 30) {
+                                Text("\($0) people")
+                            }
+                        }
                 }
+                /*
                 Section {
                     Text(checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                 }
+                */
             }
         }
         .navigationTitle("CheckSplit")
