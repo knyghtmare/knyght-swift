@@ -14,6 +14,7 @@
 		1883F1F627AD4B7F00DB02F4 /* CheckSplitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1F527AD4B7F00DB02F4 /* CheckSplitAppTests.swift */; };
 		1883F20027AD4B7F00DB02F4 /* CheckSplitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1FF27AD4B7F00DB02F4 /* CheckSplitAppUITests.swift */; };
 		1883F20227AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F20127AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift */; };
+		1883F20F27AEB73200DB02F4 /* PickerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1883F1FB27AD4B7F00DB02F4 /* CheckSplitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckSplitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883F1FF27AD4B7F00DB02F4 /* CheckSplitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppUITests.swift; sourceTree = "<group>"; };
 		1883F20127AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1883F1E427AD4B7C00DB02F4 /* CheckSplitAppApp.swift */,
 				1883F1E627AD4B7C00DB02F4 /* ContentView.swift */,
+				1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */,
 				1883F1E827AD4B7E00DB02F4 /* Assets.xcassets */,
 				1883F1EA27AD4B7E00DB02F4 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883F20F27AEB73200DB02F4 /* PickerViewTest.swift in Sources */,
 				1883F1E727AD4B7C00DB02F4 /* ContentView.swift in Sources */,
 				1883F1E527AD4B7C00DB02F4 /* CheckSplitAppApp.swift in Sources */,
 			);
