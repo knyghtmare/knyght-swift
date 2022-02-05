@@ -22,7 +22,18 @@ struct ContentView: View {
     let tipPercentages = [10, 15, 20, 25, 0]
     
     var body: some View {
-        Text("Cheese")
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Enter Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                }
+                Section {
+                    Text(checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                }
+            }
+        }
+        .navigationTitle("CheckSplit")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
