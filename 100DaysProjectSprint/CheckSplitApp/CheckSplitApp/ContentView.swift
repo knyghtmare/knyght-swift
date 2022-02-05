@@ -8,49 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    /* In the case of storing simple program state like the
-     number of times a button was tapped, we can use a
-     property wrapper from SwiftUI called @State, like this:
-     */
-    @State private var tapCount = 0
     
-    @State private var name = ""
+    // MARK: variables of the app with default values
+    // initialise variables for the app
+    // currency
+    @State private var checkAmount = 0.0
+    // number of splitters
+    @State private var numPeople = 2
+    // tip percentage
+    @State private var tipPercentage = 20
     
-    let students = ["Harry", "Hermione", "Ron"]
-    @State private var selectedStudent = "Harry"
+    // possible tip percentage values
+    let tipPercentages = [10, 15, 20, 25, 0]
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    TextField("Enter your Name", text: $name)
-                    Text("Your name is \(name)")
-                }
-                Section {
-                    Button("Tap Count: \(tapCount)") {
-                        self.tapCount += 1
-                    }
-                }
-                ForEach(0..<100) {
-                    Text("Row \($0)")
-                }
-                Picker("Select your student", selection: $selectedStudent) {
-                    ForEach(students, id: \.self) {
-                        Text($0)
-                    }
-                }
-                Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                }
-                Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                }
-            }
-            .navigationTitle("CheckSplit")
-            .navigationBarTitleDisplayMode(.inline)
-        }
+        Text("Cheese")
     }
 }
 
