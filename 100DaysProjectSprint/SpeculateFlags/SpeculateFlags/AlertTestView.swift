@@ -16,7 +16,8 @@ struct AlertTestView: View {
                 showingAlert = true
             }
             .alert("Important message", isPresented: $showingAlert) {
-                Button("OK") { }
+                Button("Delete", role: .destructive) { }
+                Button("Cancel", role: .cancel) { }
             }
     }
 }
