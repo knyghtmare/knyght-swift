@@ -9,7 +9,18 @@ import SwiftUI
 
 struct AppMainView: View {
     var body: some View {
-        Text("App Main View")
+        VStack(spacing: 30) {
+            Text("Hello, world!")
+            Text("This is another text view")
+        }
+        HStack {
+            Text("Hello, world!")
+            Text("This is another text view")
+        }
+        ZStack {
+            Text("Hello, world!")
+            Text("This is another text view")
+        }
     }
 }
 
