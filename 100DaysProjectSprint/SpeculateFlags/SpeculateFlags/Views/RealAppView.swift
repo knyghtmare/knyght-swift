@@ -20,7 +20,7 @@ struct RealAppView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .bottom, endPoint: .top)
+            LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack(spacing: 30) {
                 VStack(spacing: 20) {
@@ -42,6 +42,11 @@ struct RealAppView: View {
             }
             .padding(40)
             //.background(.ultraThinMaterial)
+            .alert(scoreTitle, isPresented: $showingScore) {
+                Button("Continue", action: askQuestion)
+            } message: {
+                Text("Your score is ???")
+            }
         }
     }
     
