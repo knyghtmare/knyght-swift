@@ -12,6 +12,7 @@
 		18371B2327AF53080034697D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18371B2227AF53080034697D /* Assets.xcassets */; };
 		18371B2627AF53080034697D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18371B2527AF53080034697D /* Preview Assets.xcassets */; };
 		18371B2D27AF53960034697D /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B2C27AF53960034697D /* AppMainView.swift */; };
+		18371B2F27AF5BD60034697D /* ButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B2E27AF5BD60034697D /* ButtonTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		18371B2227AF53080034697D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18371B2527AF53080034697D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18371B2C27AF53960034697D /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
+		18371B2E27AF5BD60034697D /* ButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				18371B1E27AF53060034697D /* SpeculateFlagsApp.swift */,
 				18371B2027AF53060034697D /* ContentView.swift */,
 				18371B2C27AF53960034697D /* AppMainView.swift */,
+				18371B2E27AF5BD60034697D /* ButtonTestView.swift */,
 				18371B2227AF53080034697D /* Assets.xcassets */,
 				18371B2427AF53080034697D /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				18371B2127AF53060034697D /* ContentView.swift in Sources */,
 				18371B1F27AF53060034697D /* SpeculateFlagsApp.swift in Sources */,
+				18371B2F27AF5BD60034697D /* ButtonTestView.swift in Sources */,
 				18371B2D27AF53960034697D /* AppMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
