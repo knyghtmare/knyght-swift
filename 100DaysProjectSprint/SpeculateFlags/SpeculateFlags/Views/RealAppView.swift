@@ -26,9 +26,10 @@ struct RealAppView: View {
                 VStack(spacing: 20) {
                     Text("Tap the flag of")
                         .foregroundColor(.white)
+                        .font(.subheadline.weight(.heavy))
                     Text(countries[correctAnswer])
                         .foregroundColor(.white)
-                        .fontWeight(.bold)
+                        .font(.largeTitle.weight(.semibold))
                 }
                 ForEach(0..<3) { number in
                     Button {
@@ -37,6 +38,8 @@ struct RealAppView: View {
                     } label: {
                         Image(countries[number])
                             .renderingMode(.original)
+                            .clipShape(Capsule())
+                            .shadow(radius: 5)
                     }
                 }
             }
