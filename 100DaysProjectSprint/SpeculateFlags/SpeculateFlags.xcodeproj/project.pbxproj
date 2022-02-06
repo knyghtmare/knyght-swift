@@ -15,6 +15,7 @@
 		18371B2F27AF5BD60034697D /* ButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B2E27AF5BD60034697D /* ButtonTestView.swift */; };
 		18371B3127AF666A0034697D /* AlertTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B3027AF666A0034697D /* AlertTestView.swift */; };
 		18371B3427AF69570034697D /* RealAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B3327AF69570034697D /* RealAppView.swift */; };
+		18371B3627AF8EDC0034697D /* ReskinnedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18371B3527AF8EDB0034697D /* ReskinnedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		18371B2E27AF5BD60034697D /* ButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestView.swift; sourceTree = "<group>"; };
 		18371B3027AF666A0034697D /* AlertTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestView.swift; sourceTree = "<group>"; };
 		18371B3327AF69570034697D /* RealAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAppView.swift; sourceTree = "<group>"; };
+		18371B3527AF8EDB0034697D /* ReskinnedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReskinnedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				18371B2027AF53060034697D /* ContentView.swift */,
+				18371B3527AF8EDB0034697D /* ReskinnedView.swift */,
 				18371B2C27AF53960034697D /* AppMainView.swift */,
 				18371B2E27AF5BD60034697D /* ButtonTestView.swift */,
 				18371B3027AF666A0034697D /* AlertTestView.swift */,
@@ -160,6 +163,7 @@
 				18371B3427AF69570034697D /* RealAppView.swift in Sources */,
 				18371B2127AF53060034697D /* ContentView.swift in Sources */,
 				18371B1F27AF53060034697D /* SpeculateFlagsApp.swift in Sources */,
+				18371B3627AF8EDC0034697D /* ReskinnedView.swift in Sources */,
 				18371B2F27AF5BD60034697D /* ButtonTestView.swift in Sources */,
 				18371B2D27AF53960034697D /* AppMainView.swift in Sources */,
 				18371B3127AF666A0034697D /* AlertTestView.swift in Sources */,
