@@ -31,7 +31,8 @@ struct AppMainView: View {
         // otherwise just use .background(.red)
         ZStack {
             VStack(spacing: 0) {
-                LinearGradient(gradient: Gradient(colors: [.white, .green]), startPoint: .bottom, endPoint: .top)
+                //LinearGradient(gradient: Gradient(colors: [.white, .green]), startPoint: .bottom, endPoint: .top)
+                RadialGradient(gradient: Gradient(colors: [.blue, .white]), center: .center, startRadius: 20, endRadius: 200)
             }
 
             // to add glass effect
