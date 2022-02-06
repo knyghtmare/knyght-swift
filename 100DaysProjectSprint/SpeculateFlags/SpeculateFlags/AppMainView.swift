@@ -31,12 +31,13 @@ struct AppMainView: View {
         // otherwise just use .background(.red)
         ZStack {
             VStack(spacing: 0) {
-                Color.green
+                LinearGradient(gradient: Gradient(colors: [.white, .green]), startPoint: .bottom, endPoint: .top)
             }
 
             // to add glass effect
             Text("Your content")
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
+                //.foregroundColor(.secondary)
                 .padding(50)
                 .background(.ultraThinMaterial)
         }
