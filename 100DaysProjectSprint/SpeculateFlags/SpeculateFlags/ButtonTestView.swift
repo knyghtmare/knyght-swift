@@ -12,6 +12,9 @@ struct ButtonTestView: View {
         Button("Delete selection", role: .destructive, action: executeDelete)
             //.buttonStyle(.borderedProminent)
             .buttonStyle(.bordered)
+        Button("Button 3") { }
+            .buttonStyle(.borderedProminent)
+            .tint(.mint)
     }
     
     func executeDelete() {
