@@ -29,6 +29,18 @@ struct AppMainView: View {
             Text("Hello, world!")
         }
         // otherwise just use .background(.red)
+        ZStack {
+            VStack(spacing: 0) {
+                Color.green
+            }
+
+            // to add glass effect
+            Text("Your content")
+                .foregroundColor(.secondary)
+                .padding(50)
+                .background(.ultraThinMaterial)
+        }
+        .ignoresSafeArea()
     }
 }
 
