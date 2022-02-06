@@ -22,8 +22,13 @@ struct AppMainView: View {
             Text("This is another text view")
         }
         ZStack {
+            // to fill whole safe area
+            Color.red
+                // to frame this color
+                .frame(width: 200, height: 200)
             Text("Hello, world!")
-        }.background(.red)
+        }
+        // otherwise just use .background(.red)
     }
 }
 
