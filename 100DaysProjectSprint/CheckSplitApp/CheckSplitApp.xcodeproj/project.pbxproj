@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1883F1E527AD4B7C00DB02F4 /* CheckSplitAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1E427AD4B7C00DB02F4 /* CheckSplitAppApp.swift */; };
 		1883F1E727AD4B7C00DB02F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1E627AD4B7C00DB02F4 /* ContentView.swift */; };
-		1883F1E927AD4B7E00DB02F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883F1E827AD4B7E00DB02F4 /* Assets.xcassets */; };
 		1883F1EC27AD4B7E00DB02F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883F1EB27AD4B7E00DB02F4 /* Preview Assets.xcassets */; };
 		1883F1F627AD4B7F00DB02F4 /* CheckSplitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1F527AD4B7F00DB02F4 /* CheckSplitAppTests.swift */; };
 		1883F20027AD4B7F00DB02F4 /* CheckSplitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1FF27AD4B7F00DB02F4 /* CheckSplitAppUITests.swift */; };
 		1883F20227AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F20127AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift */; };
 		1883F20F27AEB73200DB02F4 /* PickerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */; };
+		1883F21127AF4B9400DB02F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883F21027AF4B9400DB02F4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		1883F1E127AD4B7C00DB02F4 /* CheckSplitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckSplitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883F1E427AD4B7C00DB02F4 /* CheckSplitAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppApp.swift; sourceTree = "<group>"; };
 		1883F1E627AD4B7C00DB02F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1883F1E827AD4B7E00DB02F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1883F1EB27AD4B7E00DB02F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1883F1F127AD4B7F00DB02F4 /* CheckSplitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckSplitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883F1F527AD4B7F00DB02F4 /* CheckSplitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppTests.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		1883F1FF27AD4B7F00DB02F4 /* CheckSplitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppUITests.swift; sourceTree = "<group>"; };
 		1883F20127AD4B7F00DB02F4 /* CheckSplitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTest.swift; sourceTree = "<group>"; };
+		1883F21027AF4B9400DB02F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/AppIcons (2)/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				1883F1E427AD4B7C00DB02F4 /* CheckSplitAppApp.swift */,
 				1883F1E627AD4B7C00DB02F4 /* ContentView.swift */,
 				1883F20E27AEB73200DB02F4 /* PickerViewTest.swift */,
-				1883F1E827AD4B7E00DB02F4 /* Assets.xcassets */,
+				1883F21027AF4B9400DB02F4 /* Assets.xcassets */,
 				1883F1EA27AD4B7E00DB02F4 /* Preview Content */,
 			);
 			path = CheckSplitApp;
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1883F1EC27AD4B7E00DB02F4 /* Preview Assets.xcassets in Resources */,
-				1883F1E927AD4B7E00DB02F4 /* Assets.xcassets in Resources */,
+				1883F21127AF4B9400DB02F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
