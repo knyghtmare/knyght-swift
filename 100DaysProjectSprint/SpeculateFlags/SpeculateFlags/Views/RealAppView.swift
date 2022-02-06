@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct RealAppView: View {
+    var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
+    var correctAnswer = Int.random(in: 0...2)
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Tap the flag of")
+            Text(countries[correctAnswer])
+        }
     }
 }
 
