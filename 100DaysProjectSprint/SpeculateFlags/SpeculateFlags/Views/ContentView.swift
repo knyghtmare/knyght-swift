@@ -33,8 +33,8 @@ struct ContentView: View {
             // LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom)
             //    .ignoresSafeArea()
             RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
-                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3),
+                .init(color: Color(red: 0.70, green: 0.70, blue: 0.30), location: 0.3),
+                .init(color: Color(red: 0.10, green: 0.50, blue: 0.50), location: 0.3),
             ], center: .top, startRadius: 200, endRadius: 400)
                 .ignoresSafeArea()
             VStack {
@@ -69,9 +69,9 @@ struct ContentView: View {
                 .alert(scoreTitle, isPresented: $showingScore) {
                     Button("Continue", action: askQuestion)
                 } message: {
-                    Text("Your score is ???")
+                    Text("Your score is \(scoreCounter)")
                 }
-                Text("Score: ", format: $scoreCounter)
+                Text("Score: \(scoreCounter)")
                     .foregroundColor(.white)
                     .font(.title.bold())
             }
