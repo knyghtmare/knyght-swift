@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182AECA127B35E26005006E7 /* ViewsAndModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AECA027B35E26005006E7 /* ViewsAndModifiers.swift */; };
+		182AECA327B35ECE005006E7 /* TestButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AECA227B35ECE005006E7 /* TestButtonView.swift */; };
 		187BAA35276C126C00191815 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BAA34276C126C00191815 /* TestAppApp.swift */; };
 		187BAA37276C126C00191815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BAA36276C126C00191815 /* ContentView.swift */; };
 		187BAA39276C126D00191815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BAA38276C126D00191815 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182AECA027B35E26005006E7 /* ViewsAndModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiers.swift; sourceTree = "<group>"; };
+		182AECA227B35ECE005006E7 /* TestButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButtonView.swift; sourceTree = "<group>"; };
 		187BAA31276C126C00191815 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BAA34276C126C00191815 /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
 		187BAA36276C126C00191815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 			children = (
 				187BAA36276C126C00191815 /* ContentView.swift */,
 				18DB231E2771217300EDB9DA /* LoginView.swift */,
+				182AECA027B35E26005006E7 /* ViewsAndModifiers.swift */,
+				182AECA227B35ECE005006E7 /* TestButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				18DB231A27711E4100EDB9DA /* Title.swift in Sources */,
 				187BAA37276C126C00191815 /* ContentView.swift in Sources */,
 				18DB231C27711F0A00EDB9DA /* PrimaryButton.swift in Sources */,
+				182AECA327B35ECE005006E7 /* TestButtonView.swift in Sources */,
+				182AECA127B35E26005006E7 /* ViewsAndModifiers.swift in Sources */,
 				187BAA44276C12A200191815 /* Button.swift in Sources */,
 				187BAA35276C126C00191815 /* TestAppApp.swift in Sources */,
 			);
