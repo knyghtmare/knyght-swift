@@ -20,6 +20,8 @@ struct ContentView: View {
     let hour = components.hour ?? 0
     let minute = components.minute ?? 0
     */
+    func calculateBedtime() {
+    }
     
     var body: some View {
         // Text("Hello, world!")
@@ -38,6 +40,10 @@ struct ContentView: View {
                 Text("Daily coffee intake")
                     .font(.headline)
                 Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...3)
+            }
+            .navigationTitle("BetterRest")
+            .toolbar {
+                Button("Calculate", action: calculateBedtime)
             }
         }
         .padding(20)
