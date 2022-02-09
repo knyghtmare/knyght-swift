@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var sleepAmount = 8.0
     // var to assign a date
     @State private var wakeUp = Date.now
+    // amount in cups of coffee
+    @State private var coffeeAmount = 1
     
     /*
     let components = Calendar.current.dateComponents([.hour, .minute], from: someDate)
@@ -24,19 +26,20 @@ struct ContentView: View {
         //    .padding()
         // step is set to 0.25 which is 25% of an hour
         // that is, it's 15 minutes
-        //VStack {
-            Form {
-                Section {
-                    Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-                    DatePicker("Please enter timr", selection: $wakeUp, displayedComponents: .hourAndMinute)
-                        .labelsHidden()
-                    DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
-                }
-                Section {
-                    Text(Date.now.formatted(date: .long, time: .shortened))
-                }
+        NavigationView {
+            VStack {
+                Text("When do you want to wake up?")
+                            .font(.headline)
+                DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                Text("Desired amount of sleep")
+                    .font(.headline)
+                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+                Text("Daily coffee intake")
+                    .font(.headline)
+                Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...3)
             }
-        //}
+        }
         .padding(20)
         .background(.white)
         //.ignoresSafeArea()
