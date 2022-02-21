@@ -16,9 +16,16 @@ struct StartButtonView: View {
         Button(action: {
             print("Exit the Onboarding")
         }) {
-            HStack {
+            HStack(spacing: 8) {
                 Text("Start")
-            }
+                Image(systemName: "arrow.right.circle")
+                    .imageScale(.large)
+            } //: HStack
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(
+                Capsule().strokeBorder(Color.white, lineWidth: 1.25)
+            )
         } //: Button
         .accentColor(Color.white)
     }
