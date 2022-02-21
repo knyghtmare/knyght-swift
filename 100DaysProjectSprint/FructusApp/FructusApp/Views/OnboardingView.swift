@@ -17,7 +17,7 @@ struct OnboardingView: View {
         // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         TabView {
             ForEach(fruits[0...5]) { item in
-                FruitCardView(fruits)
+                FruitCardView(fruit: item)
             } //: Loop
         } //: Tab
         .tabViewStyle(PageTabViewStyle())
@@ -29,6 +29,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(fruits: fruitsData)
     }
 }
