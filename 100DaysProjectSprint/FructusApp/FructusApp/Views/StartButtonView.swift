@@ -16,8 +16,11 @@ struct StartButtonView: View {
         Button(action: {
             print("Exit the Onboarding")
         }) {
-            Text("Start")
-        }
+            HStack {
+                Text("Start")
+            }
+        } //: Button
+        .accentColor(Color.white)
     }
 }
 
@@ -25,6 +28,6 @@ struct StartButtonView: View {
 
 struct StartButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        StartButtonView().previewLayout(.sizeThatFits)
+        StartButtonView().preferredColorScheme(.dark).previewLayout(.sizeThatFits)
     }
 }
