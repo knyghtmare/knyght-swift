@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				1851C5F427C445DA00B93F3F /* FructusAppApp.swift */,
-				1851C5F627C445DA00B93F3F /* ContentView.swift */,
+				1851C60227C4490800B93F3F /* Views */,
 				1851C5F827C445DD00B93F3F /* Assets.xcassets */,
 				1851C5FA27C445DD00B93F3F /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				1851C5FB27C445DD00B93F3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1851C60227C4490800B93F3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1851C5F627C445DA00B93F3F /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
