@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainAppView.swift
 //  FructusApp
 //
 //  Created by Tahsin Jahin Khalid on 22/2/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainAppView: View {
     var body: some View {
-        MainAppView()
+        Text("Fructus App").padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainAppView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainAppView()
     }
 }
