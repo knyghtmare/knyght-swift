@@ -10,12 +10,14 @@ import SwiftUI
 struct OnboardingView: View {
     // MARK: - Properties
     
+    var fruits: [Fruit] = fruitsData
+    
     // MARK: - Body
     var body: some View {
         // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         TabView {
-            ForEach(0..<5) { item in
-                FruitCardView()
+            ForEach(fruits[0...5]) { item in
+                FruitCardView(fruits)
             } //: Loop
         } //: Tab
         .tabViewStyle(PageTabViewStyle())
