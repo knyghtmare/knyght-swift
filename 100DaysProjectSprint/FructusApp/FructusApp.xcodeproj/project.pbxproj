@@ -13,6 +13,7 @@
 		1851C5FC27C445DD00B93F3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851C5FB27C445DD00B93F3F /* Preview Assets.xcassets */; };
 		1851C60427C4499600B93F3F /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851C60327C4499600B93F3F /* MainAppView.swift */; };
 		1851C60727C44A9D00B93F3F /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851C60627C44A9D00B93F3F /* FruitCardView.swift */; };
+		1851C60927C44EB600B93F3F /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851C60827C44EB600B93F3F /* StartButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1851C5FB27C445DD00B93F3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1851C60327C4499600B93F3F /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		1851C60627C44A9D00B93F3F /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		1851C60827C44EB600B93F3F /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				1851C5F627C445DA00B93F3F /* ContentView.swift */,
 				1851C60327C4499600B93F3F /* MainAppView.swift */,
 				1851C60627C44A9D00B93F3F /* FruitCardView.swift */,
+				1851C60827C44EB600B93F3F /* StartButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				1851C5F727C445DA00B93F3F /* ContentView.swift in Sources */,
 				1851C60727C44A9D00B93F3F /* FruitCardView.swift in Sources */,
 				1851C60427C4499600B93F3F /* MainAppView.swift in Sources */,
+				1851C60927C44EB600B93F3F /* StartButtonView.swift in Sources */,
 				1851C5F527C445DA00B93F3F /* FructusAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
