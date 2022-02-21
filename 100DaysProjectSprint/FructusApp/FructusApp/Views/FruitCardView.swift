@@ -10,6 +10,8 @@ import SwiftUI
 struct FruitCardView: View {
     // MARK: - Properties
     
+    @State private var isAnimating: Bool = false
+    
     // MARK: - Body
     var body: some View {
         ZStack {
@@ -33,6 +35,7 @@ struct FruitCardView: View {
                     .padding(.horizontal, 16)
                     .frame(maxWidth: 480)
                 // Button: Start
+                StartButtonView()
             } //: VStack
         } //: ZStack
         .frame(minWidth: 0, idealWidth: 320, maxWidth: .infinity, minHeight: 0, idealHeight: 640, maxHeight: .infinity, alignment: .center)
