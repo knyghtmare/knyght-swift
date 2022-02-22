@@ -40,12 +40,20 @@ struct AppSettingsView: View {
                         label:
                             SettingsLabelView(labelText: "Application", labelImage: "iphone")
                     ) {
-                        Divider().padding(.vertical, 4)
-                        
                         SettingsRowView(name: "Developer", content: "Tahsin Jahin")
+                            
                         SettingsRowView(name: "Designer", content: "Robert Petras")
+                            
                         SettingsRowView(name: "Compatibility", content: "iOS 15")
+                            
                         SettingsRowView(name: "Github", linkLabel: "Github Profile", linkDestination: "github.com/knyghtmare")
+                            
+                        SettingsRowView(name: "Dribbble", linkLabel: "Profile", linkDestination: "dribbble.com/tahsinjahin")
+                            
+                        SettingsRowView(name: "SwiftUI", content: "3")
+                            
+                        SettingsRowView(name: "Swift", content: "v5.0")
+                            
                     } //: GROUP
                     // MARK: SECTION THREE
                 } //: VSTACK
