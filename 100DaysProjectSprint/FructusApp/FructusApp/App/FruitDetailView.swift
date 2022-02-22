@@ -20,6 +20,8 @@ struct FruitDetailView: View {
                 VStack(alignment: .center, spacing: 20) {
                     // HEADER
                     
+                    FruitHeaderView(fruit: fruit)
+                    
                     VStack(alignment: .leading, spacing: 20) {
                         // TITLE
                         Text(fruit.title)
