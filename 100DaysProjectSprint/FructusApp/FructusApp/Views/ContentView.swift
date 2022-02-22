@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - Properties
+    
+    var fruits: [Fruit] = fruitsData
+    
+    // MARK: - Body
     var body: some View {
-        MainAppView()
+        NavigationView {
+            //Text("Fructus App").padding()
+            List {
+                ForEach(fruits.shuffled()) { item in
+                    FruitRowView(fruit: item)
+                        .padding(.vertical, 4)
+                }
+            } //: List
+            .navigationTitle("Fruits")
+        } //: NavigationView
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
