@@ -29,12 +29,18 @@ struct FruitDetailView: View {
                         // HEADLINE
                         Text(fruit.headline)
                             .font(.headline)
+                            .multilineTextAlignment(.leading)
                         
                         // NUTRIENTS
                         
                         // SUBHEADING
+                        Text("Learn More about \(fruit.title)".uppercased())
+                            .fontWeight(.bold)
+                            .foregroundColor(fruit.gradientColors[1])
                         
-                        // DESCRIPTIOn
+                        // DESCRIPTION
+                        Text(fruit.description)
+                            .multilineTextAlignment(.leading)
                         
                         // LINK
                     } //:Vstack
@@ -50,6 +56,6 @@ struct FruitDetailView: View {
 
 struct FruitDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitDetailView(fruit: fruitsData[0])
+        FruitDetailView(fruit: fruitsData[2])
     }
 }
