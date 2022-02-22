@@ -18,7 +18,8 @@ struct SourceLinkView: View {
                 Spacer()
                 Link("Wikipedia", destination: URL(string: "https://wikipedia.org")!)
                 Image(systemName: "arrow.up.right.square")
-            }
+            } //: HSTACK
+            .font(.footnote)
         }
     }
 }
