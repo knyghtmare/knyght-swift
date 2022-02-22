@@ -24,6 +24,8 @@ struct AppSettingsView: View {
                             HStack {
                                 Text("FructusApp".uppercased())
                                     .fontWeight(.bold)
+                                Spacer()
+                                Image(systemName: "info.circle")
                             } //:HSTACK
                     ) {
                         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
