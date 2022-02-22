@@ -39,6 +39,7 @@ struct ContentView: View {
                     } //: Sheet
             )
         } //: NavigationView
+        // adjust for iPadOS
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
