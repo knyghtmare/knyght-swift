@@ -49,6 +49,8 @@ struct FruitDetailView: View {
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
                 } //: VStack
+                .navigationBarTitle(fruit.title, displayMode: .inline)
+                .navigationBarHidden(true)
             } //: ScrollView
         } //: Navigation
     }
@@ -58,6 +60,6 @@ struct FruitDetailView: View {
 
 struct FruitDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitDetailView(fruit: fruitsData[2])
+        FruitDetailView(fruit: fruitsData[4])
     }
 }
