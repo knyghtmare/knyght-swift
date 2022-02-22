@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct FructusAppApp: App {
+    
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     var body: some Scene {
