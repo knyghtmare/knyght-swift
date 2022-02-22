@@ -52,6 +52,7 @@ struct FruitDetailView: View {
                 .navigationBarTitle(fruit.title, displayMode: .inline)
                 .navigationBarHidden(true)
             } //: ScrollView
+            .edgesIgnoringSafeArea(.top)
         } //: Navigation
     }
 }
