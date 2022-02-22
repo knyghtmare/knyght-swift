@@ -10,14 +10,36 @@ import SwiftUI
 struct AppSettingsView: View {
     // MARK: Properties
     
+    @Environment(\.presentationMode) var presentationMode
+    
     // MARK: Body
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    // MARK: SECTION ONE
+                    
+                    GroupBox(
+                        label:
+                            HStack {
+                                Text("FructusApp".uppercased())
+                                    .fontWeight(.bold)
+                            } //:HSTACK
+                    ) {
+                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    }
+                    // MARK: SECTION TWO
+                    // MARK: SECTION THREE
                 } //: VSTACK
                 .navigationBarTitle(Text("App Settings"), displayMode: .large)
+                .navigationBarItems(
+                    trailing:
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Image(systemName: "xmark")
+                        }
+                )
                 .padding()
             } //: ScrollView
         } //: Navigation
