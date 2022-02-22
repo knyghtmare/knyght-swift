@@ -18,18 +18,22 @@ struct SettingsRowView: View {
     
     // MARK: BODY
     var body: some View {
-        HStack(alignment: .center, spacing: 10) {
-            Text(name).foregroundColor(Color.gray)
-            Spacer()
-            if (content != nil) {
-                Text(content!)
-            } else if (linkLabel != nil && linkDestination != nil) {
-                Link(linkLabel!, destination: URL(string: "https://\(linkDestination!)")!)
-                Image(systemName: "arrow.up.right.square").foregroundColor(Color.pink)
-            } else {
-                /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
-            }
-        } //: HSTACK
+        VStack {
+            Divider().padding(.vertical, 4)
+            
+            HStack(alignment: .center, spacing: 10) {
+                Text(name).foregroundColor(Color.gray)
+                Spacer()
+                if (content != nil) {
+                    Text(content!)
+                } else if (linkLabel != nil && linkDestination != nil) {
+                    Link(linkLabel!, destination: URL(string: "https://\(linkDestination!)")!)
+                    Image(systemName: "arrow.up.right.square").foregroundColor(Color.pink)
+                } else {
+                    /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+                }
+            } //: HSTACK
+        } //: VSTACK
     }
 }
 
