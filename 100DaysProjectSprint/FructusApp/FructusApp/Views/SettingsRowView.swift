@@ -25,7 +25,7 @@ struct SettingsRowView: View {
                 Text(content!)
             } else if (linkLabel != nil && linkDestination != nil) {
                 Link(linkLabel!, destination: URL(string: "https://\(linkDestination!)")!)
-                Image(systemName: "arrow.up,right.square").foregroundColor(Color.pink)
+                Image(systemName: "arrow.up.right.square").foregroundColor(Color.pink)
             } else {
                 /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
             }
@@ -37,8 +37,14 @@ struct SettingsRowView: View {
 
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView(name: "Developer", content: "Knyght")
-            .previewLayout(.fixed(width: 375, height: 60))
+        Group {
+            SettingsRowView(name: "Developer", content: "Knyght")
+                .previewLayout(.fixed(width: 375, height: 60))
             .padding()
+            SettingsRowView(name: "Portfolio", linkLabel: "Github", linkDestination: "github.com/knyghtmare")
+                .preferredColorScheme(.dark)
+                .previewLayout(.fixed(width: 375, height: 60))
+                .padding()
+        }
     }
 }
