@@ -18,8 +18,10 @@ struct ContentView: View {
             //Text("Fructus App").padding()
             List {
                 ForEach(fruits.shuffled()) { item in
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 4)
+                    NavigationLink(destination: FruitDetailView(fruit: item)) {
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 4)
+                    }
                 }
             } //: List
             .navigationTitle("Fruits")
@@ -27,6 +29,8 @@ struct ContentView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
+
+// MARK: - Preview
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
