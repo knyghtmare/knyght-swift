@@ -35,6 +35,20 @@ struct AppSettingsView: View {
                         } // HSTACK
                     } //: GROUP
                     // MARK: SECTION TWO
+                    GroupBox(
+                        label:
+                            SettingsLabelView(labelText: "Customisation", labelImage: "paintbrush")
+                    ) {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish you can restart the application by toggling the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                    } //: GROUP
+                    // MARK: SECTION THREE
                     
                     GroupBox(
                         label:
@@ -55,7 +69,6 @@ struct AppSettingsView: View {
                         SettingsRowView(name: "Swift", content: "v5.0")
                             
                     } //: GROUP
-                    // MARK: SECTION THREE
                 } //: VSTACK
                 .navigationBarTitle(Text("App Settings"), displayMode: .large)
                 .navigationBarItems(
