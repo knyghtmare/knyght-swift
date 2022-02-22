@@ -23,7 +23,20 @@ struct FruitDetailView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         // TITLE
                         Text(fruit.title)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(fruit.gradientColors[1])
                         // HEADLINE
+                        Text(fruit.headline)
+                            .font(.headline)
+                        
+                        // NUTRIENTS
+                        
+                        // SUBHEADING
+                        
+                        // DESCRIPTIOn
+                        
+                        // LINK
                     } //:Vstack
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
