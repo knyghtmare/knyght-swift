@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct MainAppView: View {
+    // MARK: - Properties
+    
+    var fruits: [Fruit] = fruitsData
+    
+    // MARK: - Body
     var body: some View {
-        Text("Fructus App").padding()
+        NavigationView {
+            //Text("Fructus App").padding()
+            List {
+                ForEach(fruits.shuffled()) { item in
+                    FruitRowView(fruit: item)
+                        .padding(.vertical, 4)
+                }
+            } //: List
+            .navigationTitle("Fruits")
+        } //: NavigationView
     }
 }
 
 struct MainAppView_Previews: PreviewProvider {
     static var previews: some View {
-        MainAppView()
+        MainAppView(fruits: fruitsData)
     }
 }
