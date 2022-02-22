@@ -42,11 +42,10 @@ struct AppSettingsView: View {
                     ) {
                         Divider().padding(.vertical, 4)
                         
-                        HStack(alignment: .center, spacing: 10) {
-                            Text("Developer")
-                            Spacer()
-                            Text("Tahsin Jahin")
-                        } //: HSTACK
+                        SettingsRowView(name: "Developer", content: "Tahsin Jahin")
+                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Compatibility", content: "iOS 15")
+                        SettingsRowView(name: "Github", linkLabel: "Github Profile", linkDestination: "github.com/knyghtmare")
                     } //: GROUP
                     // MARK: SECTION THREE
                 } //: VSTACK
