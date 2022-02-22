@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct FruitDetailView: View {
+    // MARK: - Properties
+    
+    var fruit: Fruit
+    
+    // MARK: - Body
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .center, spacing: 20) {
+                    // HEADER
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        // TITLE
+                        Text(fruit.title)
+                        // HEADLINE
+                    } //:Vstack
+                    .padding(.horizontal, 20)
+                    .frame(maxWidth: 640, alignment: .center)
+                } //: VStack
+            } //: ScrollView
+        } //: Navigation
     }
 }
 
+// MARK: - Preview
+
 struct FruitDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitDetailView()
+        FruitDetailView(fruit: fruitsData[0])
     }
 }
