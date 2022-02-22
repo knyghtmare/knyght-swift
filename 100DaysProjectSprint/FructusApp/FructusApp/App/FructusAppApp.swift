@@ -11,7 +11,7 @@ import SwiftUI
 struct FructusAppApp: App {
     
     //newly introduced wrapper, usually store a small piece of information
-    @AppStorage("isOnboarding") var isOnboarding = true
+    @AppStorage("isOnboarding") var isOnboarding : Bool = true
     
     var body: some Scene {
         WindowGroup {
