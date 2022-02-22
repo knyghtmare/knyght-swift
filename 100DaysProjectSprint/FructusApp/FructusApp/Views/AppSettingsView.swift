@@ -12,6 +12,8 @@ struct AppSettingsView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
+    
     // MARK: Body
     var body: some View {
         NavigationView {
@@ -47,6 +49,10 @@ struct AppSettingsView: View {
                             .layoutPriority(1)
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: $isOnboarding) {
+                            Text("Restart".uppercased())
+                        } //: Toggle
                     } //: GROUP
                     // MARK: SECTION THREE
                     
