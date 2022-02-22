@@ -32,9 +32,18 @@ struct AppSettingsView: View {
                                 .cornerRadius(9)
                             Text("Most fruits are naturally low in fat, sodium, and calories. None have cholesterol. Fruits are sources of many essential nutrients, including potassium, dietary fibres, vitamins, and much more.")
                                 .font(.footnote)
-                        }
-                    }
+                        } // HSTACK
+                    } //: GROUP
                     // MARK: SECTION TWO
+                    
+                    GroupBox(
+                        label:
+                            SettingsLabelView(labelText: "Application", labelImage: "iphone")
+                    ) {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("Dummy")
+                    } //: GROUP
                     // MARK: SECTION THREE
                 } //: VSTACK
                 .navigationBarTitle(Text("App Settings"), displayMode: .large)
