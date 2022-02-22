@@ -50,7 +50,7 @@ struct FruitDetailView: View {
                             .padding(.bottom, 40)
                     } //:Vstack
                     .padding(.horizontal, 20)
-                    .frame(maxWidth: 640, alignment: .center)
+                    //.frame(maxWidth: 640, alignment: .center)
                 } //: VStack
                 .navigationBarTitle(fruit.title, displayMode: .inline)
                 .navigationBarHidden(true)
