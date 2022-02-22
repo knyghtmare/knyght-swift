@@ -58,7 +58,7 @@ struct AppSettingsView: View {
                             } else {
                                 Text("Restart".uppercased())
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
+                                    .foregroundColor(Color.secondary)
                             }
                         } //: Toggle
                         .padding()
@@ -75,7 +75,7 @@ struct AppSettingsView: View {
                     ) {
                         SettingsRowView(name: "Developer", content: "Tahsin Jahin")
                             
-                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Designer", content: "Tahsin Jahin")
                             
                         SettingsRowView(name: "Compatibility", content: "iOS 15")
                             
