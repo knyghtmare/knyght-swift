@@ -12,6 +12,8 @@ struct FruitHeaderView: View {
     
     var fruit: Fruit
     
+    @State private var isAnimatingImage: Bool = false
+    
     // MARK: - BODY
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -24,6 +26,11 @@ struct FruitHeaderView: View {
                 .padding(.vertical, 20)
         } //: ZSTACK
         .frame(height: 440)
+        .onAppear() {
+            withAnimation(.easeOut(duration: 0.50)) {
+                isAnimatingImage = true
+            }
+        }
     }
 }
 
@@ -31,6 +38,6 @@ struct FruitHeaderView: View {
 
 struct FruitHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitHeaderView(fruit: fruitsData[1]).previewLayout(.fixed(width: 375, height: 440))
+        FruitHeaderView(fruit: fruitsData[3]).previewLayout(.fixed(width: 375, height: 440))
     }
 }
