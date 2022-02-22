@@ -42,7 +42,11 @@ struct AppSettingsView: View {
                     ) {
                         Divider().padding(.vertical, 4)
                         
-                        Text("Dummy")
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Developer")
+                            Spacer()
+                            Text("Tahsin Jahin")
+                        } //: HSTACK
                     } //: GROUP
                     // MARK: SECTION THREE
                 } //: VSTACK
