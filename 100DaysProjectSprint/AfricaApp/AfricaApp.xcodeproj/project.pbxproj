@@ -33,6 +33,7 @@
 		18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */; };
 		18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */; };
 		18A6F56227CD646400DE1166 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56127CD646400DE1166 /* AnimalListItemView.swift */; };
+		18A6F56427CD678000DE1166 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56327CD678000DE1166 /* AnimalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		18A6F56127CD646400DE1166 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		18A6F56327CD678000DE1166 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */,
+				18A6F56327CD678000DE1166 /* AnimalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				18A6F55727CD1B6D00DE1166 /* MainView.swift in Sources */,
 				18A6F55A27CD378E00DE1166 /* CoverImageView.swift in Sources */,
 				18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */,
+				18A6F56427CD678000DE1166 /* AnimalModel.swift in Sources */,
 				18A6F52427CD099A00DE1166 /* ContentView.swift in Sources */,
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
