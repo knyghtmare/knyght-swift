@@ -21,8 +21,15 @@ struct AnimalListItemView: View {
                     RoundedRectangle(cornerRadius: 12)
                 )
             VStack(alignment: .leading, spacing: 8) {
-                Text("Title")
-                Text("Content")
+                Text("Lion")
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.accentColor)
+                Text("This is a Lion")
+                    .font(.footnote)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                    .padding(.trailing, 8)
             } //: VSTACK
         } // HSTACK
     }
