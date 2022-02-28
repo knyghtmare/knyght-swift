@@ -31,6 +31,7 @@
 		18A6F55727CD1B6D00DE1166 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55627CD1B6D00DE1166 /* MainView.swift */; };
 		18A6F55A27CD378E00DE1166 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55927CD378E00DE1166 /* CoverImageView.swift */; };
 		18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */; };
+		18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		18A6F55627CD1B6D00DE1166 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		18A6F55927CD378E00DE1166 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		18A6F52027CD099A00DE1166 /* AfricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				18A6F55E27CD5D8800DE1166 /* Extra */,
 				18A6F55B27CD4C4C00DE1166 /* Models */,
 				18A6F55827CD376D00DE1166 /* ViewComponents */,
 				18A6F54F27CD12BC00DE1166 /* Views */,
@@ -175,6 +178,14 @@
 				18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		18A6F55E27CD5D8800DE1166 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
+				18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
