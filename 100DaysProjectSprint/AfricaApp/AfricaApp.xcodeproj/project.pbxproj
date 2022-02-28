@@ -32,6 +32,7 @@
 		18A6F55A27CD378E00DE1166 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55927CD378E00DE1166 /* CoverImageView.swift */; };
 		18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */; };
 		18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */; };
+		18A6F56227CD646400DE1166 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56127CD646400DE1166 /* AnimalListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		18A6F55927CD378E00DE1166 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		18A6F56127CD646400DE1166 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				18A6F55927CD378E00DE1166 /* CoverImageView.swift */,
+				18A6F56127CD646400DE1166 /* AnimalListItemView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A6F55327CD1A5500DE1166 /* VideoListView.swift in Sources */,
+				18A6F56227CD646400DE1166 /* AnimalListItemView.swift in Sources */,
 				18A6F55727CD1B6D00DE1166 /* MainView.swift in Sources */,
 				18A6F55A27CD378E00DE1166 /* CoverImageView.swift in Sources */,
 				18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */,
