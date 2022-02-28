@@ -23,7 +23,7 @@ extension Bundle {
         let decoder = JSONDecoder()
         
         // 4. Create property for the decoded data
-        guard let loaded = try? decoder.decode([CoverImage].self, from: data) else {
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle.")
         }
         
