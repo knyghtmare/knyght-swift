@@ -21,5 +21,7 @@ struct AnimalListItemView: View {
 struct AnimalListItemView_Previews: PreviewProvider {
     static var previews: some View {
         AnimalListItemView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
