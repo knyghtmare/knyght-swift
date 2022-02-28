@@ -12,8 +12,14 @@ struct ContentView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                CoverImageView()
+                    .frame(height: 300)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0 ))
+            } //: List
+            .navigationBarTitle("Welcome to Africa", displayMode: .large)
+        } //: Navigation View
     }
 }
 
