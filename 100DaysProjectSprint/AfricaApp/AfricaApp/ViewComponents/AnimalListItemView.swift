@@ -12,7 +12,19 @@ struct AnimalListItemView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, spacing: 16) {
+            Image("lion")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 90, height: 90)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: 12)
+                )
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Title")
+                Text("Content")
+            } //: VSTACK
+        } // HSTACK
     }
 }
 
