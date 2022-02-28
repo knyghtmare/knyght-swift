@@ -12,7 +12,13 @@ struct MainView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ContentView()
+                .tabItem {
+                    Image(systemName: "square.grid.2x2")
+                    Text("Browse")
+                }
+        }
     }
 }
 
