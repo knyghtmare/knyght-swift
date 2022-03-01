@@ -38,6 +38,7 @@
 		18A6F56827CE2D5E00DE1166 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56727CE2D5E00DE1166 /* HeadingView.swift */; };
 		18A6F56A27CE470100DE1166 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56927CE470100DE1166 /* InsetGalleryView.swift */; };
 		18A6F56C27CE4CEB00DE1166 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56B27CE4CEB00DE1166 /* InsetFactView.swift */; };
+		18A6F57027CE5BC600DE1166 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		18A6F56727CE2D5E00DE1166 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeadingView.swift; path = AfricaApp/Views/HeadingView.swift; sourceTree = SOURCE_ROOT; };
 		18A6F56927CE470100DE1166 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		18A6F56B27CE4CEB00DE1166 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		18A6F55827CD376D00DE1166 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */,
 				18A6F56B27CE4CEB00DE1166 /* InsetFactView.swift */,
 				18A6F56927CE470100DE1166 /* InsetGalleryView.swift */,
 				18A6F56727CE2D5E00DE1166 /* HeadingView.swift */,
@@ -299,6 +302,7 @@
 				18A6F56627CE267A00DE1166 /* AnimalDetailView.swift in Sources */,
 				18A6F56427CD678000DE1166 /* AnimalModel.swift in Sources */,
 				18A6F52427CD099A00DE1166 /* ContentView.swift in Sources */,
+				18A6F57027CE5BC600DE1166 /* InsetMapView.swift in Sources */,
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
