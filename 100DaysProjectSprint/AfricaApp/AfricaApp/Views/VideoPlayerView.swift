@@ -14,7 +14,7 @@ struct VideoPlayerView: View {
     // MARK: - BODY
     var body: some View {
         // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "cheetah", withExtension: "mp4")!))
+        VideoPlayer(player: playVideo(fileName: "cheetah", fileFormat: "mp4"))
     }
 }
 
