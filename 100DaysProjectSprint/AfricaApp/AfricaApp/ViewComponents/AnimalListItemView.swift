@@ -40,10 +40,10 @@ struct AnimalListItemView: View {
 // MARK: - PREVIEW
 
 struct AnimalListItemView_Previews: PreviewProvider {
-    static var animals: [AnimalModel] = Bundle.main.decode("animals.json")
+    static var animal: [AnimalModel] = Bundle.main.decode("animals.json")
     
     static var previews: some View {
-        AnimalListItemView(animal: animals[2])
+        AnimalListItemView(animal: animal[2])
             .previewLayout(.sizeThatFits)
             .padding()
     }
