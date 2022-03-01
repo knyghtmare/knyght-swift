@@ -22,5 +22,6 @@ struct HeadingView_Previews: PreviewProvider {
     static var previews: some View {
         HeadingView()
             .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
