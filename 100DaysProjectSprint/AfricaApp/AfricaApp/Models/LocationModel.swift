@@ -12,12 +12,12 @@ struct ParkLocationModel: Codable, Identifiable {
     let id: String
     let name: String
     let image: String
-    let varLat: Double
-    let varLong: Double
+    let latitude: Double
+    let longitude: Double
     
     // Computed Property
     
     var parkLocation: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: varLat, longitude: varLong)
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }
