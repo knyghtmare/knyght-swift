@@ -14,4 +14,10 @@ struct ParkLocationModel: Codable, Identifiable {
     let image: String
     let varLat: Double
     let varLong: Double
+    
+    // Computed Property
+    
+    var parkLocation: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: varLat, longitude: varLong)
+    }
 }
