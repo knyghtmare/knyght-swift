@@ -10,14 +10,30 @@ import SwiftUI
 struct VideoListView: View {
     // MARK: - PROPERTIES
     
-    var videos: [VideoModel] = Bundle.main.decode("videos.json")
+    @State var videos: [VideoModel] = Bundle.main.decode("videos.json")
+    
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
     
     // MARK: - BODY
     var body: some View {
         NavigationView {
             List(videos) { item in
                 VideoListItemView(video: item)
+                    .padding(.vertical, 8)
             } //: List
+            .listStyle(InsetGroupedListStyle())
+            .navigationBarTitle("Videos", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        //shuffle videos
+                        videos.shuffle()
+                        hapticImpact.impactOccurred()
+                    }) {
+                        Image(systemName: "arrow.2.squarepath")
+                    }
+                }
+            }
         } //: NavView
     }
 }
