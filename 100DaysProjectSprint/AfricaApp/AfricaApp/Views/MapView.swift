@@ -18,9 +18,16 @@ struct MapView: View {
         return mapRegion
     }()
     
+    var mapAppLocations: [ParkLocationModel] = Bundle.main.decode("locations.json")
+    
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // 1. Basic Map
+        Map(coordinateRegion: $region)
+        
+        // 2. Advanced Map
+        
     }
 }
 
