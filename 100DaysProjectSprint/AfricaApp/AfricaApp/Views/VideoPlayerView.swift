@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct VideoPlayerView: View {
     // MARK: - PROPERTIES
     
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "cheetah", withExtension: "mp4")!))
     }
 }
 
