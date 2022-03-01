@@ -40,6 +40,7 @@
 		18A6F56C27CE4CEB00DE1166 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56B27CE4CEB00DE1166 /* InsetFactView.swift */; };
 		18A6F57027CE5BC600DE1166 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */; };
 		18A6F57227CE5F1F00DE1166 /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57127CE5F1F00DE1166 /* ExternalWebLinkView.swift */; };
+		18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57327CE69DE00DE1166 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		18A6F56B27CE4CEB00DE1166 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		18A6F57127CE5F1F00DE1166 /* ExternalWebLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLinkView.swift; sourceTree = "<group>"; };
+		18A6F57327CE69DE00DE1166 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			children = (
 				18A6F55C27CD4C6E00DE1166 /* CoverImageModel.swift */,
 				18A6F56327CD678000DE1166 /* AnimalModel.swift */,
+				18A6F57327CE69DE00DE1166 /* VideoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F57227CE5F1F00DE1166 /* ExternalWebLinkView.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
+				18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
 				18A6F56A27CE470100DE1166 /* InsetGalleryView.swift in Sources */,
 				18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */,
