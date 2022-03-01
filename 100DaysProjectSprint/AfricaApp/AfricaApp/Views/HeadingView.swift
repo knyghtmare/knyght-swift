@@ -9,10 +9,16 @@ import SwiftUI
 
 struct HeadingView: View {
     // MARK: - PROPERTIES
+    var headingImage: String
+    var headingText: String
     
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: headingImage)
+            Text(headingText)
+        } //: HSTACK
+        .padding(.vertical)
     }
 }
 
@@ -20,7 +26,7 @@ struct HeadingView: View {
 
 struct HeadingView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadingView()
+        HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
             .previewLayout(.sizeThatFits)
             .padding()
     }
