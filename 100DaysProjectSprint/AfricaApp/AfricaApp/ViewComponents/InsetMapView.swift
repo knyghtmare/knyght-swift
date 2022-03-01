@@ -17,6 +17,19 @@ struct InsetMapView: View {
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         Map(coordinateRegion: $region)
+            .overlay(
+                NavigationLink(destination: MapView()) {
+                    HStack {
+                        Image(systemName: "mappin.circle")
+                            .foregroundColor(Color.white)
+                            .imageScale(.large)
+                        
+                        Text("Locations")
+                            .foregroundColor(.accentColor)
+                            .font(.bold)
+                    } //: HSTACK
+                } //: NavLINK
+            )
             .frame(height: 256)
             .cornerRadius(12)
     }
