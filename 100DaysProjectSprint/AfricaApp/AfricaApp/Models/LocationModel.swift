@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct LocationModel: Codable, Identifiable {
+struct ParkLocationModel: Codable, Identifiable {
     let id: String
     let name: String
     let image: String
