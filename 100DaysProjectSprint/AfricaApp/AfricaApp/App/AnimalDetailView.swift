@@ -14,13 +14,27 @@ struct AnimalDetailView: View {
     // MARK: - BODY
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack {
+            VStack(alignment: .center, spacing: 20) {
+                // HERO IMAGE
                 Image(animal.image)
                     .resizable()
                     .scaledToFit()
+                // TITLE
                 Text(animal.name)
+                // HEADLINE
                 Text(animal.headline)
+                
+                // GALLERY
+                
+                // FACTS
+                
+                // DESCRIPTION
+                
+                // MAP
+                
+                // LINK
             } //: VSTACK
+            .navigationBarTitle("Learn About \(animal.name)", displayMode: .inline)
         } //: SCROLL
     }
 }
@@ -31,6 +45,8 @@ struct AnimalDetailView_Previews: PreviewProvider {
     static let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     
     static var previews: some View {
-        AnimalDetailView(animal: animals[2])
+        NavigationView {
+            AnimalDetailView(animal: animals[2])
+        }
     }
 }
