@@ -18,7 +18,7 @@ struct MapView: View {
         return mapRegion
     }()
     
-    var mapAppLocations: [ParkLocationModel] = Bundle.main.decode("locations.json")
+    let mapAppLocations: [ParkLocationModel] = Bundle.main.decode("locations.json")
     
     // MARK: - BODY
     var body: some View {
