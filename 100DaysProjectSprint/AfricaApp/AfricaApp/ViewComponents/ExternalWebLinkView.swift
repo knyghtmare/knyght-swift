@@ -9,18 +9,33 @@ import SwiftUI
 
 struct ExternalWebLinkView: View {
     // MARK: - PROPERTIES
+    let animal: AnimalModel
     
     // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GroupBox {
+            HStack {
+                Image(systemName: "globe")
+                Text("Wikipedia")
+                Spacer()
+                
+                Group {
+                    Image(systemName: "arrow.up.right.squared")
+                    Link(animal.name, destination: (URL(string: animal.link) ?? URL(string: "https://wikipedia.org"))!)
+                }
+                .foregroundColor(.accentColor)
+            } //: HSTACK
+        } //: BOX
     }
 }
 
 // MARK: - PREVIEW
 
 struct ExternalWebLinkView_Previews: PreviewProvider {
+    static let animals: [AnimalModel] = Bundle.main.decode("animals.json")
+    
     static var previews: some View {
-        ExternalWebLinkView()
+        ExternalWebLinkView(animal: animals[2])
             .previewLayout(.sizeThatFits)
             .padding()
     }
