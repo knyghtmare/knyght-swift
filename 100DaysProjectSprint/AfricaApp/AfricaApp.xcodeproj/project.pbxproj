@@ -41,6 +41,7 @@
 		18A6F57027CE5BC600DE1166 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */; };
 		18A6F57227CE5F1F00DE1166 /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57127CE5F1F00DE1166 /* ExternalWebLinkView.swift */; };
 		18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57327CE69DE00DE1166 /* VideoModel.swift */; };
+		18A6F57627CE6A3700DE1166 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57527CE6A3700DE1166 /* VideoListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		18A6F56F27CE5BC600DE1166 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		18A6F57127CE5F1F00DE1166 /* ExternalWebLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLinkView.swift; sourceTree = "<group>"; };
 		18A6F57327CE69DE00DE1166 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		18A6F57527CE6A3700DE1166 /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				18A6F56727CE2D5E00DE1166 /* HeadingView.swift */,
 				18A6F55927CD378E00DE1166 /* CoverImageView.swift */,
 				18A6F56127CD646400DE1166 /* AnimalListItemView.swift */,
+				18A6F57527CE6A3700DE1166 /* VideoListItem.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
 				18A6F56A27CE470100DE1166 /* InsetGalleryView.swift in Sources */,
+				18A6F57627CE6A3700DE1166 /* VideoListItem.swift in Sources */,
 				18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */,
 				18A6F56827CE2D5E00DE1166 /* HeadingView.swift in Sources */,
 			);
