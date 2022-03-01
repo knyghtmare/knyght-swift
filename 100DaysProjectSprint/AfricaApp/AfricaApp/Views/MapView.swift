@@ -24,10 +24,25 @@ struct MapView: View {
     var body: some View {
         // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         // 1. Basic Map
-        Map(coordinateRegion: $region)
+        // Map(coordinateRegion: $region)
         
         // 2. Advanced Map
-        
+        Map(coordinateRegion: $region, annotationItems: mapAppLocations, annotationContent: {
+            item in
+            // A. PIN: OLD STYLE (always static)
+            // MapPin(coordinate: item.parkLocation, tint: .accentColor)
+            
+            // B. MARKER: NEW STYLE (always static)
+            // MapMarker(coordinate: item.parkLocation, tint: .accentColor)
+            
+            // C. Custom Basic Annotation
+            MapAnnotation(coordinate: item.parkLocation) {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32, alignment: .center)
+            }
+        })
     }
 }
 
