@@ -34,6 +34,7 @@
 		18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */; };
 		18A6F56227CD646400DE1166 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56127CD646400DE1166 /* AnimalListItemView.swift */; };
 		18A6F56427CD678000DE1166 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56327CD678000DE1166 /* AnimalModel.swift */; };
+		18A6F56627CE267A00DE1166 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F56527CE267A00DE1166 /* AnimalDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		18A6F56127CD646400DE1166 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		18A6F56327CD678000DE1166 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		18A6F56527CE267A00DE1166 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalDetailView.swift; path = AfricaApp/App/AnimalDetailView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		18A6F54F27CD12BC00DE1166 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18A6F56527CE267A00DE1166 /* AnimalDetailView.swift */,
 				18A6F55027CD1A3A00DE1166 /* MapView.swift */,
 				18A6F55227CD1A5500DE1166 /* VideoListView.swift */,
 				18A6F55427CD1B6000DE1166 /* GalleryView.swift */,
@@ -283,6 +286,7 @@
 				18A6F55727CD1B6D00DE1166 /* MainView.swift in Sources */,
 				18A6F55A27CD378E00DE1166 /* CoverImageView.swift in Sources */,
 				18A6F55D27CD4C6E00DE1166 /* CoverImageModel.swift in Sources */,
+				18A6F56627CE267A00DE1166 /* AnimalDetailView.swift in Sources */,
 				18A6F56427CD678000DE1166 /* AnimalModel.swift in Sources */,
 				18A6F52427CD099A00DE1166 /* ContentView.swift in Sources */,
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
