@@ -16,7 +16,7 @@ struct VideoListView: View {
     var body: some View {
         NavigationView {
             List(videos) { item in
-                VideoListItem(video: item)
+                VideoListItemView(video: item)
             } //: List
         } //: NavView
     }
