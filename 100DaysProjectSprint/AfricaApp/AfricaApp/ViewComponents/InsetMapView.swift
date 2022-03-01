@@ -26,9 +26,18 @@ struct InsetMapView: View {
                         
                         Text("Locations")
                             .foregroundColor(.accentColor)
-                            .font(.bold)
+                            .fontWeight(.bold)
                     } //: HSTACK
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 14)
+                    .background(
+                        Color.black
+                            .opacity(0.40)
+                            .cornerRadius(8)
+                    )
                 } //: NavLINK
+                .padding(12)
+                , alignment: .topTrailing
             )
             .frame(height: 256)
             .cornerRadius(12)
