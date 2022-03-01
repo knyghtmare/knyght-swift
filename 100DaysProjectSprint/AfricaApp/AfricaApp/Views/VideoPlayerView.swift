@@ -31,6 +31,8 @@ struct VideoPlayerView: View {
                 , alignment: .topLeading
             )
         } //: VSTACK
+        .accentColor(.accentColor)
+        .navigationBarTitle(videoTitle, displayMode: .inline)
     }
 }
 
@@ -38,6 +40,8 @@ struct VideoPlayerView: View {
 
 struct VideoPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoPlayerView(videoSelected: "lion", videoTitle: "lion")
+        NavigationView {
+            VideoPlayerView(videoSelected: "lion", videoTitle: "Lion")
+        }
     }
 }
