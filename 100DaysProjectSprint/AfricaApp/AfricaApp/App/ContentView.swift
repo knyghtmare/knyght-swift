@@ -36,8 +36,16 @@ struct ContentView: View {
                 } else {
                     //Text("Dummy")
                     ScrollView(.vertical, showsIndicators: false) {
-                        
-                    }
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                } // NavLINK
+                            } //: LOOP
+                        } //: GRID
+                        .padding(10)
+                        .animation(.easeIn, value: true)
+                    } //: SCROLL
                 } //: Conditional
             } //: GROUP
             .navigationBarTitle("Welcome to Africa", displayMode: .large)
