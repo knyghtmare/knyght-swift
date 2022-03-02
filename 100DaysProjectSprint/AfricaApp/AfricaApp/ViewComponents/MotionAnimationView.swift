@@ -33,6 +33,9 @@ struct MotionAnimationView: View {
         return Double.random(in: 0.025...1.0)
     }
     // 5. RANDOM DELAY
+    func randomDelay() -> Double {
+        return Double.random(in: 0...2 )
+    }
     
     // MARK: - BODY
     var body: some View {
@@ -63,7 +66,7 @@ struct MotionAnimationView: View {
                             Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
                                 .repeatForever()
                                 .speed(randomSpeed())
-                                .delay(1)
+                                .delay(randomDelay())
                             , value: isAnimating
                         )
                         .onAppear {
@@ -71,8 +74,9 @@ struct MotionAnimationView: View {
                         }
                 } //: LOOP
                 
-                Text("Width: \(Int(geometry.size.width)) Height: \(Int(geometry.size.height))")
+                // Text("Width: \(Int(geometry.size.width)) Height: \(Int(geometry.size.height))")
             } //: ZSTACK
+            .drawingGroup()
         } //: Geometry
     }
 }
