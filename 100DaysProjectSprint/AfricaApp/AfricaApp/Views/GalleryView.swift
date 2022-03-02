@@ -28,7 +28,7 @@ struct GalleryView: View {
     @State private var gridColumn: Double = 3.0
     
     func gridSwitch() {
-        gridLayout = Array(repeating: .init(.flexible(), count: Int(gridColumn))
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
     }
     
     // MARK: - BODY
