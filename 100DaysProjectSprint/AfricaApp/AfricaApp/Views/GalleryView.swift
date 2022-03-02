@@ -15,11 +15,21 @@ struct GalleryView: View {
     
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     
+    /*
     let gridLayout: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+     */
+    
+    // Dynamic Grid Layout
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible(), count: Int(gridColumn))
+    }
     
     // MARK: - BODY
     var body: some View {
