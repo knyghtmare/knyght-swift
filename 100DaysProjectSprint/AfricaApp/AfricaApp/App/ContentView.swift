@@ -34,7 +34,10 @@ struct ContentView: View {
                         } //: LOOP
                     } //: List
                 } else {
-                    Text("Dummy")
+                    //Text("Dummy")
+                    ScrollView(.vertical, showsIndicators: false) {
+                        
+                    }
                 } //: Conditional
             } //: GROUP
             .navigationBarTitle("Welcome to Africa", displayMode: .large)
