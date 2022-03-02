@@ -20,6 +20,18 @@ struct AnimalGridItemView: View {
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(12)
+            Text(animal.name)
+                .font(.title2)
+                .fontWeight(.heavy)
+                .foregroundColor(.accentColor)
+            /*
+            Text(animal.headline)
+                .font(.footnote)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(.white)
+                .lineLimit(2)
+                .padding(.trailing, 8)
+             */
         } //: VSTACK
     }
 }
