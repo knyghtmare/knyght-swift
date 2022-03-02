@@ -14,7 +14,7 @@ struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
-    let haptics: UIImpactFeedbackGenerator(style: .medium)
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     /*
     let gridLayout: [GridItem] = [
