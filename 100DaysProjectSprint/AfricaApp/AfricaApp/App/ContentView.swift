@@ -22,6 +22,8 @@ struct ContentView: View {
     
     func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColumn = gridLayout.count
+        print("Grid Number: \(gridColumn)")
     }
     
     // MARK: - BODY
@@ -74,6 +76,7 @@ struct ContentView: View {
                             print("Grid has been activated.")
                             isGridViewActive = true
                             haptics.impactOccurred()
+                            gridSwitch()
                         }) {
                             Image(systemName: "square.grid.2x2")
                                 .font(.title2)
