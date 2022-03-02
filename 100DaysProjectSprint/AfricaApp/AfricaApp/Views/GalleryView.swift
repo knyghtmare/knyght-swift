@@ -10,6 +10,8 @@ import SwiftUI
 struct GalleryView: View {
     // MARK: - PROPERTIES
     
+    let gridLayout: [GridItem]
+    
     // MARK: - BODY
     var body: some View {
         ScrollView {
