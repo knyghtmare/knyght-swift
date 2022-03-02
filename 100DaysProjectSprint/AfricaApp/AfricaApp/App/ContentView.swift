@@ -15,6 +15,8 @@ struct ContentView: View {
     
     @State private var isGridViewActive: Bool = false
     
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    
     // MARK: - BODY
     var body: some View {
         NavigationView {
