@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct GalleryView: View {
     // MARK: - PROPERTIES
@@ -19,7 +20,12 @@ struct GalleryView: View {
     // MARK: - BODY
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            // MARK: - GRID
+            LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                }
+            } //: GRID
         } //: SCROLL
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
