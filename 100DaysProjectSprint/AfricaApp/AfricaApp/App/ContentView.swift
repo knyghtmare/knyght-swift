@@ -27,6 +27,28 @@ struct ContentView: View {
                 } //: LOOP
             } //: List
             .navigationBarTitle("Welcome to Africa", displayMode: .large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    HStack(spacing: 16) {
+                        // List
+                        Button(action: {
+                            print("List View has been activated.")
+                        }) {
+                            Image(systemName: "square.fill.text.grid.1x2")
+                                .font(.title2)
+                                .foregroundColor(.accentColor)
+                        }
+                        // Grid
+                        Button(action: {
+                            print("Grid has been activated.")
+                        }) {
+                            Image(systemName: "square.grid.2x2")
+                                .font(.title2)
+                                .foregroundColor(.primary)
+                        }
+                    } //: HSTACK
+                } //: BUTTONS
+            } //: TOOLBAR
         } //: Navigation View
     }
 }
