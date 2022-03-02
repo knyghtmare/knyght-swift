@@ -61,6 +61,7 @@ struct MotionAnimationView: View {
                                 .repeatForever()
                                 .speed(2)
                                 .delay(1)
+                            , value: isAnimating
                         )
                 } //: LOOP
                 
