@@ -26,6 +26,11 @@ struct GalleryView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 30) {
                 // MARK: - IMAGE
+                Image(selectedAnimal)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
                 
                 // MARK: - GRID
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
