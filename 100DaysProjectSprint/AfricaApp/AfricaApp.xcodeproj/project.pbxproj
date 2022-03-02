@@ -45,6 +45,7 @@
 		18A6F57827CEA80200DE1166 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57727CEA80200DE1166 /* VideoPlayerView.swift */; };
 		18A6F57A27CEA8EB00DE1166 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57927CEA8EB00DE1166 /* VideoPlayerHelper.swift */; };
 		18A6F57C27CEACBA00DE1166 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F57B27CEACBA00DE1166 /* LocationModel.swift */; };
+		18C43A4427CEEA1A00A3A40A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C43A4327CEEA1A00A3A40A /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		18A6F57727CEA80200DE1166 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		18A6F57927CEA8EB00DE1166 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		18A6F57B27CEACBA00DE1166 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		18C43A4327CEEA1A00A3A40A /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				18A6F55927CD378E00DE1166 /* CoverImageView.swift */,
 				18A6F56127CD646400DE1166 /* AnimalListItemView.swift */,
 				18A6F57527CE6A3700DE1166 /* VideoListItemView.swift */,
+				18C43A4327CEEA1A00A3A40A /* MapAnnotationView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				18A6F57A27CEA8EB00DE1166 /* VideoPlayerHelper.swift in Sources */,
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F57227CE5F1F00DE1166 /* ExternalWebLinkView.swift in Sources */,
+				18C43A4427CEEA1A00A3A40A /* MapAnnotationView.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
 				18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
