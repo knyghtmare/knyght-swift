@@ -55,7 +55,13 @@ struct MotionAnimationView: View {
                         .position(
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
-                    )
+                        )
+                        .animation(
+                            Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
+                                .repeatForever()
+                                .speed(2)
+                                .delay(1)
+                        )
                 } //: LOOP
                 
                 Text("Width: \(Int(geometry.size.width)) Height: \(Int(geometry.size.height))")
