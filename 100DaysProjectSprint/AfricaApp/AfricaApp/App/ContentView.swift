@@ -15,7 +15,9 @@ struct ContentView: View {
     
     @State private var isGridViewActive: Bool = false
     
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
     
     // MARK: - BODY
     var body: some View {
