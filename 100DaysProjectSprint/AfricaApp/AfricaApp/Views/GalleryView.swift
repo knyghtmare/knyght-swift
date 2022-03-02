@@ -18,7 +18,7 @@ struct GalleryView: View {
     
     // MARK: - BODY
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         } //: SCROLL
         .frame(maxWidth: .infinity, maxHeight: .infinity)
