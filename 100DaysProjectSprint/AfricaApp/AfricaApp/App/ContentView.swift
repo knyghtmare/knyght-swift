@@ -24,6 +24,18 @@ struct ContentView: View {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
         gridColumn = gridLayout.count
         print("Grid Number: \(gridColumn)")
+        
+        // TOOLBAR IMAGE
+        switch gridColumn {
+        case 1:
+            toolBarIcon = "square.grid.2x2"
+        case 2:
+            toolBarIcon = "square.grid.3x2"
+        case 3:
+            toolBarIcon = "rectangle.grid.1x1"
+        default:
+            toolBarIcon = "square.grid.2x2"
+        }
     }
     
     // MARK: - BODY
