@@ -11,6 +11,8 @@ import MapKit
 struct GalleryView: View {
     // MARK: - PROPERTIES
     
+    let animals: [AnimalModel] = Bundle.main.decode("animals.json")
+    
     let gridLayout: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -22,8 +24,12 @@ struct GalleryView: View {
         ScrollView(.vertical, showsIndicators: false) {
             // MARK: - GRID
             LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                ForEach(animals) { item in
+                    //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    Image(item.image)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
                 }
             } //: GRID
         } //: SCROLL
