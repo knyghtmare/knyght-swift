@@ -49,7 +49,40 @@ struct MapView: View {
             MapAnnotation(coordinate: item.parkLocation) {
                 MapAnnotationView(location: item)
             }
-        })
+        }) //: MAP
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 48, height: 48, alignment: .center)
+                
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack {
+                        Text("Latitude")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                    } //: HSTACK
+                    Divider()
+                    HStack {
+                        Text("Longitude")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                    } //: HSTACK
+                } //: VSTACK
+            } //: HSTACK
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
+            .background(
+                Color.black
+                    .cornerRadius(8)
+                    .opacity(0.60)
+            )
+            .padding()
+            , alignment: .top
+        )
     }
 }
 
