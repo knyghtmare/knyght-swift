@@ -17,7 +17,12 @@ struct ContentView: View {
     
     // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
-    @State private var gridColumn: Double = 3.0
+    @State private var gridColumn: Int = 1
+    @State private var toolBarIcon: String = "square.grid.2x2"
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+    }
     
     // MARK: - BODY
     var body: some View {
