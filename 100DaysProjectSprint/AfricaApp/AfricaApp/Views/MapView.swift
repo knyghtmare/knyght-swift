@@ -63,6 +63,10 @@ struct MapView: View {
                             .font(.footnote)
                             .fontWeight(.bold)
                             .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
                     } //: HSTACK
                     Divider()
                     HStack {
@@ -70,6 +74,10 @@ struct MapView: View {
                             .font(.footnote)
                             .fontWeight(.bold)
                             .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
                     } //: HSTACK
                 } //: VSTACK
             } //: HSTACK
