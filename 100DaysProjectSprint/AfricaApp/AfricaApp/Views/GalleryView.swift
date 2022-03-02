@@ -30,7 +30,7 @@ struct GalleryView: View {
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                    .overlay(Circle().stroke(Color.white, lineWidth: 8))
                 
                 // MARK: - GRID
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
@@ -41,6 +41,9 @@ struct GalleryView: View {
                             .scaledToFit()
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                            .onTapGesture {
+                                selectedAnimal = item.image
+                            }
                     }
                 } //: GRID
             } //: VSTACK
