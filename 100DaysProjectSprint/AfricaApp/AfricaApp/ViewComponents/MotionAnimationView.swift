@@ -19,7 +19,14 @@ struct MotionAnimationView: View {
         return CGFloat.random(in: 0...max)
     }
     // 2. RANDOM SIZE
+    func randomSize() -> CGFloat {
+        return CGFloat(Int.random(in: 0...300))
+    }
     // 3. RANDOM SCALE
+    
+    func randomScale() -> CGFloat {
+        return CGFloat(Double.random(in: 0.1...2.0))
+    }
     // 4. RANDOM SPEED
     // 5. RANDOM DELAY
     
@@ -29,6 +36,7 @@ struct MotionAnimationView: View {
             // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             ZStack {
                 ForEach(0...randomCircle, id: \.self) { item in
+                    /*
                     Circle()
                         .foregroundColor(.gray)
                         .opacity(0.15)
@@ -36,6 +44,15 @@ struct MotionAnimationView: View {
                         .position(
                             x: geometry.size.width/2,
                             y: geometry.size.height/2
+                    )
+                    */
+                    Circle()
+                        .foregroundColor(.gray)
+                        .opacity(0.15)
+                        .frame(width: randomSize(), height: randomSize(), alignment: .center)
+                        .position(
+                            x: randomCoordinate(max: geometry.size.width),
+                            y: randomCoordinate(max: geometry.size.height)
                     )
                 } //: LOOP
                 
