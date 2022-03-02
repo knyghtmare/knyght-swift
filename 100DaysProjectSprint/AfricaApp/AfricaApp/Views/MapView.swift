@@ -36,11 +36,18 @@ struct MapView: View {
             // MapMarker(coordinate: item.parkLocation, tint: .accentColor)
             
             // C. Custom Basic Annotation
+            /*
             MapAnnotation(coordinate: item.parkLocation) {
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32, alignment: .center)
+            }
+             */
+            // D. CUSTOM ADVANCED ANNOTATION
+            // it could be interactive
+            MapAnnotation(coordinate: item.parkLocation) {
+                MapAnnotationView(location: item)
             }
         })
     }
