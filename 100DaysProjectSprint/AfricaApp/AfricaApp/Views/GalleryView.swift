@@ -42,6 +42,13 @@ struct GalleryView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 8))
                 
+                // MARK: - SLIDER
+                Slider(value: $gridColumn, in: 2...4)
+                    .padding(.horizontal)
+                    .onChange(of: gridColumn, perform: { value in
+                        gridSwitch()
+                    })
+                
                 // MARK: - GRID
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
                     ForEach(animals) { item in
@@ -56,6 +63,9 @@ struct GalleryView: View {
                             }
                     }
                 } //: GRID
+                .onAppear(perform: {
+                    gridSwitch()
+                })
             } //: VSTACK
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
