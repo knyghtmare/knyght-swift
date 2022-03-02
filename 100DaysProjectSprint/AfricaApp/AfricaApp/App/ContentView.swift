@@ -37,6 +37,7 @@ struct ContentView: View {
                         Button(action: {
                             print("List View has been activated.")
                             isGridViewActive = false
+                            haptics.impactOccurred()
                         }) {
                             Image(systemName: "square.fill.text.grid.1x2")
                                 .font(.title2)
@@ -46,6 +47,7 @@ struct ContentView: View {
                         Button(action: {
                             print("Grid has been activated.")
                             isGridViewActive = true
+                            haptics.impactOccurred()
                         }) {
                             Image(systemName: "square.grid.2x2")
                                 .font(.title2)
