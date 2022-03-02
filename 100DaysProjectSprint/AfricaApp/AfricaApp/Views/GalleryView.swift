@@ -24,7 +24,9 @@ struct GalleryView: View {
     // MARK: - BODY
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack {
+            VStack(alignment: .center, spacing: 30) {
+                // MARK: - IMAGE
+                
                 // MARK: - GRID
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
                     ForEach(animals) { item in
@@ -37,6 +39,8 @@ struct GalleryView: View {
                     }
                 } //: GRID
             } //: VSTACK
+            .padding(.horizontal, 10)
+            .padding(.vertical, 50)
         } //: SCROLL
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
