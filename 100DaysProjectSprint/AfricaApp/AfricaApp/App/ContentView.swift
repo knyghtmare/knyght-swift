@@ -32,7 +32,7 @@ struct ContentView: View {
                         } //: LOOP
                     } //: List
                 } else {
-                    /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+                    Text("Dummy")
                 } //: Conditional
             } //: GROUP
             .navigationBarTitle("Welcome to Africa", displayMode: .large)
