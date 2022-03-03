@@ -55,6 +55,7 @@ struct ContentView: View {
                         } //: LOOP
                         
                         CreditsView()
+                            .modifier(CenterModifier())
                     } //: List
                 } else {
                     //Text("Dummy")
