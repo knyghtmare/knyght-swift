@@ -53,6 +53,8 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             } // NavLINK
                         } //: LOOP
+                        
+                        CreditsView()
                     } //: List
                 } else {
                     //Text("Dummy")
