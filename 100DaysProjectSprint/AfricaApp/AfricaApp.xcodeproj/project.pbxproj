@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1855A26F27D106EA00DF9807 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1855A26E27D106EA00DF9807 /* Stickers.xcassets */; };
 		1855A27327D106EA00DF9807 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1855A26C27D106E800DF9807 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1855A27927D108E800DF9807 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A27827D108E800DF9807 /* CreditsView.swift */; };
+		1855A27B27D10A8C00DF9807 /* CentreModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A27A27D10A8C00DF9807 /* CentreModifier.swift */; };
 		18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F52127CD099A00DE1166 /* AfricaAppApp.swift */; };
 		18A6F52427CD099A00DE1166 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F52327CD099A00DE1166 /* ContentView.swift */; };
 		18A6F52627CD099B00DE1166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A6F52527CD099B00DE1166 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		1855A26C27D106E800DF9807 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1855A26E27D106EA00DF9807 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1855A27027D106EA00DF9807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855A27827D108E800DF9807 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		1855A27A27D10A8C00DF9807 /* CentreModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentreModifier.swift; sourceTree = "<group>"; };
 		18A6F51E27CD099A00DE1166 /* AfricaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfricaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6F52127CD099A00DE1166 /* AfricaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaAppApp.swift; sourceTree = "<group>"; };
 		18A6F52327CD099A00DE1166 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 				18C43A4327CEEA1A00A3A40A /* MapAnnotationView.swift */,
 				18C43A4527CEEFDB00A3A40A /* MotionAnimationView.swift */,
 				18C43A4727CFC0AC00A3A40A /* AnimalGridItemView.swift */,
+				1855A27827D108E800DF9807 /* CreditsView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			children = (
 				18A6F55F27CD5DA000DE1166 /* CodableBundleExtension.swift */,
 				18A6F57927CEA8EB00DE1166 /* VideoPlayerHelper.swift */,
+				1855A27A27D10A8C00DF9807 /* CentreModifier.swift */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 				18A6F55127CD1A3A00DE1166 /* MapView.swift in Sources */,
 				18A6F57227CE5F1F00DE1166 /* ExternalWebLinkView.swift in Sources */,
 				18C43A4427CEEA1A00A3A40A /* MapAnnotationView.swift in Sources */,
+				1855A27B27D10A8C00DF9807 /* CentreModifier.swift in Sources */,
 				18A6F52227CD099A00DE1166 /* AfricaAppApp.swift in Sources */,
 				18A6F57427CE69DE00DE1166 /* VideoModel.swift in Sources */,
 				18A6F55527CD1B6000DE1166 /* GalleryView.swift in Sources */,
@@ -410,6 +417,7 @@
 				18C43A4827CFC0AC00A3A40A /* AnimalGridItemView.swift in Sources */,
 				18A6F56A27CE470100DE1166 /* InsetGalleryView.swift in Sources */,
 				18A6F57627CE6A3700DE1166 /* VideoListItemView.swift in Sources */,
+				1855A27927D108E800DF9807 /* CreditsView.swift in Sources */,
 				18A6F56027CD5DA000DE1166 /* CodableBundleExtension.swift in Sources */,
 				18C43A4627CEEFDB00A3A40A /* MotionAnimationView.swift in Sources */,
 				18A6F56827CE2D5E00DE1166 /* HeadingView.swift in Sources */,
