@@ -32,7 +32,7 @@ struct ContentView: View {
         case 2:
             toolBarIcon = "square.grid.3x2"
         case 3:
-            toolBarIcon = "rectangle.grid.1x1"
+            toolBarIcon = "rectangle.grid.1x2"
         default:
             toolBarIcon = "square.grid.2x2"
         }
@@ -90,7 +90,7 @@ struct ContentView: View {
                             haptics.impactOccurred()
                             gridSwitch()
                         }) {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolBarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
