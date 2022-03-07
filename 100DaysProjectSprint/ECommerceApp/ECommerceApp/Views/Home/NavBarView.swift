@@ -14,8 +14,20 @@ struct NavBarView: View {
     var body: some View {
         HStack {
             Button(action: {},label: {
-                Text("Cheese")
-            })
+                //Text("Cheese")
+                Image(systemName: "magnifyingglass")
+                    .font(.title)
+                    .foregroundColor(.black)
+            }) // BUTTON
+            
+            Spacer()
+            
+            Button(action: {},label: {
+                //Text("Cheese")
+                Image(systemName: "cart")
+                    .font(.title)
+                    .foregroundColor(.black)
+            }) // BUTTON
         }
     } //: HSTACK
 }
