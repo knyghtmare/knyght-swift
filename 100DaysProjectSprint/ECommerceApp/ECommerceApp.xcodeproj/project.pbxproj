@@ -15,6 +15,7 @@
 		18C4AF7E27D65D0A00631047 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C4AF7A27D65D0A00631047 /* player.json */; };
 		18C4AF7F27D65D0A00631047 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C4AF7B27D65D0A00631047 /* product.json */; };
 		18C4AF8027D65D0A00631047 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C4AF7C27D65D0A00631047 /* category.json */; };
+		18C4AF8D27D660F700631047 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AF8C27D660F700631047 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18C4AF7B27D65D0A00631047 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		18C4AF7C27D65D0A00631047 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
 		18C4AF8927D65FB200631047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		18C4AF8C27D660F700631047 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 		18C4AF6227D65AB000631047 /* ECommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				18C4AF8B27D660B700631047 /* Utils */,
+				18C4AF8A27D660AF00631047 /* Extension */,
 				18C4AF8927D65FB200631047 /* Info.plist */,
 				18C4AF8827D65DA100631047 /* DataModels */,
 				18C4AF8627D65D8800631047 /* ViewComponents */,
@@ -119,6 +123,21 @@
 			children = (
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		18C4AF8A27D660AF00631047 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18C4AF8B27D660B700631047 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18C4AF8C27D660F700631047 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +216,7 @@
 			files = (
 				18C4AF6627D65AB000631047 /* ContentView.swift in Sources */,
 				18C4AF6427D65AB000631047 /* ECommerceAppApp.swift in Sources */,
+				18C4AF8D27D660F700631047 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +355,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +385,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
