@@ -8,4 +8,11 @@
 import SwiftUI
 
 // DATA
-
+// COLOR
+// LAYOUT
+// UX
+// API
+// IMAGE
+// FONT
+// STRING
+// MISC
