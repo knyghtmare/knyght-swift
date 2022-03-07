@@ -59,9 +59,11 @@
 		18C4AF6227D65AB000631047 /* ECommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				18C4AF8827D65DA100631047 /* DataModels */,
+				18C4AF8627D65D8800631047 /* ViewComponents */,
+				18C4AF8427D65D5D00631047 /* Views */,
 				18C4AF8227D65D2600631047 /* Data */,
-				18C4AF6327D65AB000631047 /* ECommerceAppApp.swift */,
-				18C4AF6527D65AB000631047 /* ContentView.swift */,
+				18C4AF8327D65D5000631047 /* App */,
 				18C4AF6727D65AB200631047 /* Assets.xcassets */,
 				18C4AF6927D65AB200631047 /* Preview Content */,
 			);
@@ -85,6 +87,36 @@
 				18C4AF7B27D65D0A00631047 /* product.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		18C4AF8327D65D5000631047 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18C4AF6327D65AB000631047 /* ECommerceAppApp.swift */,
+				18C4AF6527D65AB000631047 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18C4AF8427D65D5D00631047 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18C4AF8627D65D8800631047 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		18C4AF8827D65DA100631047 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
