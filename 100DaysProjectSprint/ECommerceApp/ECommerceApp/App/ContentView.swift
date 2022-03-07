@@ -12,8 +12,9 @@ struct ContentView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        //Text("Hello, world!")
+        FooterView()
+            .padding(.horizontal)
     }
 }
 
