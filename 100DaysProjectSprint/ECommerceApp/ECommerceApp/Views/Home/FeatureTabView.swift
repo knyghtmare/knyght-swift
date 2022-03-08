@@ -16,6 +16,8 @@ struct FeatureTabView: View {
             //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             ForEach(players) {player in
                 FeatureItemView(player: player)
+                    .padding(.top, 10)
+                    .padding(.horizontal, 15)
             }
         } //: TabView
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
