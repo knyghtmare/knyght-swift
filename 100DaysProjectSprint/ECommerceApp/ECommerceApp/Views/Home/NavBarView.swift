@@ -29,6 +29,7 @@ struct NavBarView: View {
                         .font(.title)
                     .foregroundColor(.black)
                     
+                    // notification about items in Kart
                     Circle()
                         .fill(Color.red)
                         .frame(width: 14, height: 14, alignment: .center)
