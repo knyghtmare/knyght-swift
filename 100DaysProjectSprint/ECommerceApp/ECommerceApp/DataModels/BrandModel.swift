@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Brands.swift
 //  ECommerceApp
 //
 //  Created by Tahsin Jahin Khalid on 8/3/22.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Category: Codable, Identifiable {
+struct BrandModel: Codable, Identifiable {
+    // code here
     let id: Int
-    let name: String
     let image: String
 }

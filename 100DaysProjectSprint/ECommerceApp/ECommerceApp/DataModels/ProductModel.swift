@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Product: Codable, Identifiable {
+struct ProductModel: Codable, Identifiable {
     // code here
     let id: Int
     let name: String
