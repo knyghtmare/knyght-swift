@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Brands: Codable, Identifiable {
+struct Brand: Codable, Identifiable {
     // code here
     let id: Int
     let image: String
