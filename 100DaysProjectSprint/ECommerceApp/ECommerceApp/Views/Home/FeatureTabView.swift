@@ -13,7 +13,10 @@ struct FeatureTabView: View {
     // MARK: - Body<##><##>
     var body: some View {
         TabView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ForEach(players) {player in
+                FeatureItemView(player: player)
+            }
         } //: TabView
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
     }
