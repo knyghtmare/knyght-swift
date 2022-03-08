@@ -26,6 +26,7 @@
 		18C4AF9F27D7AC4600631047 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AF9E27D7AC4600631047 /* ProductModel.swift */; };
 		18C4AFA127D7C62900631047 /* FeatureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFA027D7C62900631047 /* FeatureItemView.swift */; };
 		18C4AFA327D7C7A300631047 /* FeatureTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFA227D7C7A300631047 /* FeatureTabView.swift */; };
+		18C4AFA527D7F73B00631047 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFA427D7F73B00631047 /* CategoryItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		18C4AF9E27D7AC4600631047 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		18C4AFA027D7C62900631047 /* FeatureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemView.swift; sourceTree = "<group>"; };
 		18C4AFA227D7C7A300631047 /* FeatureTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTabView.swift; sourceTree = "<group>"; };
+		18C4AFA427D7F73B00631047 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				18C4AF9427D6734500631047 /* LogoView.swift */,
 				18C4AFA027D7C62900631047 /* FeatureItemView.swift */,
 				18C4AFA227D7C7A300631047 /* FeatureTabView.swift */,
+				18C4AFA427D7F73B00631047 /* CategoryItemView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				18C4AFA327D7C7A300631047 /* FeatureTabView.swift in Sources */,
 				18C4AF9927D7AB2D00631047 /* CodableBundleExtension.swift in Sources */,
 				18C4AF9D27D7ABEE00631047 /* CategoryModel.swift in Sources */,
+				18C4AFA527D7F73B00631047 /* CategoryItemView.swift in Sources */,
 				18C4AF9B27D7AB9100631047 /* BrandModel.swift in Sources */,
 				18C4AF6627D65AB000631047 /* ContentView.swift in Sources */,
 				18C4AF9527D6734500631047 /* LogoView.swift in Sources */,
