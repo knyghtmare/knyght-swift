@@ -8,7 +8,7 @@
 // import Foundation
 import SwiftUI
 
-struct Players: Codable, Identifiable {
+struct PlayerModel: Codable, Identifiable {
     let id: Int
     let image: String
 }

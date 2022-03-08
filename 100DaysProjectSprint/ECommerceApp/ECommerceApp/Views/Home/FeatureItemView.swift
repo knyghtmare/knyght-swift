@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FeatureItemView: View {
     // MARK: - Property
-    let player: Players
+    let player: PlayerModel
     // MARK: - Body<##><##>
     var body: some View {
         Image(player.image)
