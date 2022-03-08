@@ -10,7 +10,10 @@ import SwiftUI
 struct NavBarView: View {
     // MARK: - Properties
     
-    // MARK: - BODY<##><##>
+    // add property to indicate animation of logo
+    @State private var isAnimated: Bool = false
+    
+    // MARK: - BODY
     var body: some View {
         HStack {
             Button(action: {},label: {
@@ -22,6 +25,12 @@ struct NavBarView: View {
             
             Spacer()
             LogoView()
+                .opacity(isAnimated ? 1 : 0)
+                .onAppear(perform: {
+                    withAnimation(.easeOut(duration: 0.5)) {
+                    isAnimated = true
+                    }
+                })
             Spacer()
             
             Button(action: {},label: {
