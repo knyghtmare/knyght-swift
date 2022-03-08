@@ -25,6 +25,7 @@
 		18C4AF9D27D7ABEE00631047 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AF9C27D7ABEE00631047 /* Category.swift */; };
 		18C4AF9F27D7AC4600631047 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AF9E27D7AC4600631047 /* Product.swift */; };
 		18C4AFA127D7C62900631047 /* FeatureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFA027D7C62900631047 /* FeatureItemView.swift */; };
+		18C4AFA327D7C7A300631047 /* FeatureTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFA227D7C7A300631047 /* FeatureTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		18C4AF9C27D7ABEE00631047 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		18C4AF9E27D7AC4600631047 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		18C4AFA027D7C62900631047 /* FeatureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemView.swift; sourceTree = "<group>"; };
+		18C4AFA227D7C7A300631047 /* FeatureTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				18C4AF9227D6689600631047 /* NavBarView.swift */,
 				18C4AF9427D6734500631047 /* LogoView.swift */,
 				18C4AFA027D7C62900631047 /* FeatureItemView.swift */,
+				18C4AFA227D7C7A300631047 /* FeatureTabView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C4AFA327D7C7A300631047 /* FeatureTabView.swift in Sources */,
 				18C4AF9927D7AB2D00631047 /* CodableBundleExtension.swift in Sources */,
 				18C4AF9D27D7ABEE00631047 /* Category.swift in Sources */,
 				18C4AF9B27D7AB9100631047 /* Brands.swift in Sources */,
