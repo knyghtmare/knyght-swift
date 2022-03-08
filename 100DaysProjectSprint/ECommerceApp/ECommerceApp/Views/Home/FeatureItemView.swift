@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct FeatureItemView: View {
+    // MARK: - Property
+    let player: Players
+    // MARK: - Body<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(player.image)
+            .resizable()
+            .scaledToFit()
+            .cornerRadius(12)
     }
 }
 
+// MARK: - PREVIEW<##>
+
 struct FeatureItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureItemView()
+        FeatureItemView(player: players[0])
             .previewLayout(.sizeThatFits)
             .padding()
             .background(ColorBackground)
