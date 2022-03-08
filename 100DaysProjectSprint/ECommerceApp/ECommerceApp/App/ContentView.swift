@@ -29,6 +29,9 @@ struct ContentView: View {
                         
                         FeatureTabView()
                             //.padding(.vertical, 20)
+                            // not sure why it decided not to scale
+                            // but adding the frame modifier patched it
+                            .frame(height:230)
 
                         FooterView()
                             .padding(.horizontal)
