@@ -13,8 +13,11 @@ struct ContentView: View {
     // MARK: - BODY
     var body: some View {
         //Text("Hello, world!")
-        FooterView()
-            .padding(.horizontal)
+        VStack(spacing: 0) {
+            FooterView()
+                .padding(.horizontal)
+        } //: VSTACK
+        .background(ColorBackground.ignoresSafeArea(.all, edges: .all))
     }
 }
 
