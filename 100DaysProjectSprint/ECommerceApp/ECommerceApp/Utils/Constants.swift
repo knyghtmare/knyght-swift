@@ -20,6 +20,10 @@ let ColorBackground: Color = Color("ColorBackground")
 let ColorGray: Color = Color(UIColor.systemGray4)
 
 // LAYOUT
+
+let columnSpacing: CGFloat = 10
+
+
 // UX
 // API
 // IMAGE
