@@ -25,6 +25,8 @@ struct ContentView: View {
                 // Spacer()
                 ScrollView(.vertical, showsIndicators: false, content: {
                     VStack(spacing: 0) {
+                        FeatureTabView()
+                            .padding(.vertical, 20.0)
                         FooterView()
                             .padding(.horizontal)
                     } // VSTACK
