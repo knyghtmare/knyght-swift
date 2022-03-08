@@ -21,6 +21,8 @@ struct NavBarView: View {
             }) // BUTTON
             
             Spacer()
+            LogoView()
+            Spacer()
             
             Button(action: {},label: {
                 //Text("Cheese")
