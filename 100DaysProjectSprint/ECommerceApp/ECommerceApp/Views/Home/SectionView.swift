@@ -20,7 +20,7 @@ struct SectionView: View {
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-                .rotationEffect(Angle(degrees: -90))
+                .rotationEffect(Angle(degrees: rotateClockwise ? 90 : -90))
             Spacer()
         } //:VSTACK
         .background(ColorGray.cornerRadius(12))
