@@ -16,5 +16,6 @@ struct SectionView: View {
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
         SectionView()
+            .previewLayout(.fixed(width: 120, height: 240))
     }
 }
