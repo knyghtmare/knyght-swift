@@ -32,6 +32,8 @@ struct ContentView: View {
                             // not sure why it decided not to scale
                             // but adding the frame modifier patched it
                             .frame(height:230)
+                        
+                        CategoryGridView()
 
                         FooterView()
                             .padding(.horizontal)
