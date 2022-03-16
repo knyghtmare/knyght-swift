@@ -14,6 +14,8 @@ let brands: [BrandModel] = Bundle.main.decode("brand.json")
 let products: [ProductModel] = Bundle.main.decode("product.json")
 let categories: [CategoryModel] = Bundle.main.decode("category.json")
 
+let sampleProduct: ProductModel = products[1]
+
 // COLOR
 
 let ColorBackground: Color = Color("ColorBackground")
