@@ -12,7 +12,12 @@ struct TopPartDetailView: View {
     
     // MARK: - body<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, spacing: 6, content: {
+            // PRICE
+            VStack(alignment: .leader, spacing: 6, content: {
+                Text("Price")
+            }) //: VSTACK
+        }) //: HSTACK
     }
 }
 
@@ -21,5 +26,7 @@ struct TopPartDetailView: View {
 struct TopPartDetailView_Previews: PreviewProvider {
     static var previews: some View {
         TopPartDetailView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
