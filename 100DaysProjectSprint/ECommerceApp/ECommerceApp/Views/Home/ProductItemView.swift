@@ -14,7 +14,13 @@ struct ProductItemView: View {
     
     // MARK: - BODY<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 6, content: {
+            // PHOTO
+            // NAME
+            Text(product.name)
+            // PRICE
+            Text(product.price)
+        }) //: VSTACK
     }
 }
 
