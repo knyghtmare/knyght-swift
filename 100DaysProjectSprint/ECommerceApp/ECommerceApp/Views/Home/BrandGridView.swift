@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct BrandGridView: View {
+    // MARK: - Properties
+    
+    // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal, showsIndicators: false, content: {
+            LazyHGrid(rows: gridLayout, spacing: columnSpacing, content: {
+                Text("A")
+            }) // GRID
+        }) // Scroll
     }
 }
+
+// MARK: - PREVIEW
 
 struct BrandGridView_Previews: PreviewProvider {
     static var previews: some View {
         BrandGridView()
             .previewLayout(.sizeThatFits)
+            .background(ColorBackground)
     }
 }
