@@ -22,10 +22,16 @@ struct ProductItemView: View {
                     .scaledToFit()
                     .padding(10)
             } //: ZSTACK
-            .background(Color(red: product.color[0], green: product.color[1], blue: product.color[2]))
+            .background(Color(red: product.redColor, green: product.greenColor, blue: product.blueColor))
+            .cornerRadius(12)
             // NAME
             Text(product.name)
+                .font(.title3)
+                .fontWeight(.black)
             // PRICE
+            Text(product.formattedPrice)
+                .fontWeight(.semibold)
+                .foregroundColor(.gray)
             // Text(product.price)
         }) //: VSTACK
     }
