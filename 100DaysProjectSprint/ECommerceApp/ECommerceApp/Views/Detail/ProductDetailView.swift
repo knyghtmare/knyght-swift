@@ -15,6 +15,10 @@ struct ProductDetailView: View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack(alignment: .leading, spacing: 5, content: {
             // NAVBAR
+            NavBarDetailView()
+                .padding(.horizontal)
+                // this is deprecated, I know
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             // HEADER
             Text(sampleProduct.name)
             // DETAIL TOP PART
