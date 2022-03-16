@@ -14,9 +14,13 @@ struct BrandGridView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false, content: {
             LazyHGrid(rows: gridLayout, spacing: columnSpacing, content: {
-                Text("A")
+                // elements
+                ForEach(brands) { brand in
+                    BrandItemView(brand: brand)
+                }
             }) // GRID
             .frame(height: 200)
+            .padding(15)
         }) // Scroll
     }
 }
