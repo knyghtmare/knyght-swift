@@ -20,7 +20,8 @@ struct ProductDetailView: View {
                 // this is deprecated, I know
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             // HEADER
-            Text(sampleProduct.name)
+            // Text(sampleProduct.name)
+            HeaderDetailView()
             // DETAIL TOP PART
             // DETAIL BOTTOM PART
             // RATINGS + SIZES
