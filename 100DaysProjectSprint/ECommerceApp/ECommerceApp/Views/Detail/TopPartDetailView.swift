@@ -33,6 +33,7 @@ struct TopPartDetailView: View {
             Image(sampleProduct.image)
                 .resizable()
                 .scaledToFit()
+                .offset(y: isAnimating ? 0 : -35)
         }) //: HSTACK
         .onAppear(perform: {
             withAnimation(.easeOut(duration: 0.75)) {
