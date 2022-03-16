@@ -21,6 +21,13 @@ struct NavBarDetailView: View {
             })
             
             Spacer()
+            
+            Button(action: {}, label: {
+                //Text("Button")
+                Image(systemName: "cart")
+                    .font(.title)
+                    .foregroundColor(.white)
+            })
         } // HSTACK
     }
 }
