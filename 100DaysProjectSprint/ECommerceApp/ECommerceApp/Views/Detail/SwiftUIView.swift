@@ -25,6 +25,10 @@ struct SwiftUIView: View {
             // ADD TO CART
             Spacer()
         }) //: VSTACK
+        .ignoresSafeArea(.all, edges: .all)
+        .background(
+            Color(red: sampleProduct.redColor, green: sampleProduct.greenColor, blue: sampleProduct.blueColor)
+        )
     }
 }
 
