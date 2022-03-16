@@ -14,7 +14,7 @@ struct TopPartDetailView: View {
     var body: some View {
         HStack(alignment: .center, spacing: 6, content: {
             // PRICE
-            VStack(alignment: .leader, spacing: 6, content: {
+            VStack(alignment: .leading, spacing: 6, content: {
                 Text("Price")
             }) //: VSTACK
         }) //: HSTACK
