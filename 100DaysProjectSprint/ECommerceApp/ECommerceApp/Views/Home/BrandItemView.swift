@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BrandItemView: View {
     // MARK: - properties
+    let brand: BrandModel
     
     // MARK: - body<##><##>
     var body: some View {
@@ -20,6 +21,9 @@ struct BrandItemView: View {
 
 struct BrandItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BrandItemView()
+        BrandItemView(brand: brands[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
+            .background(ColorBackground)
     }
 }
