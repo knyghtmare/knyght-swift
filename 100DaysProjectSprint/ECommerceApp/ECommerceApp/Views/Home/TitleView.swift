@@ -12,9 +12,11 @@ struct TitleView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text("Helmet")
-            .font(.largeTitle)
+        HStack {
+            Text("Helmet")
+                .font(.largeTitle)
             .fontWeight(.heavy)
+        } //: HSTACK
     }
 }
 
