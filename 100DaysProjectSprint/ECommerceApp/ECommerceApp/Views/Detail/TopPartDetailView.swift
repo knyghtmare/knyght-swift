@@ -10,6 +10,8 @@ import SwiftUI
 struct TopPartDetailView: View {
     // MARK: - properties
     
+    @State private var isAnimating: Bool = false
+    
     // MARK: - body<##><##>
     var body: some View {
         HStack(alignment: .center, spacing: 6, content: {
