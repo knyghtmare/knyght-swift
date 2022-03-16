@@ -27,7 +27,11 @@ struct SwiftUIView: View {
         }) //: VSTACK
         .ignoresSafeArea(.all, edges: .all)
         .background(
-            Color(red: sampleProduct.redColor, green: sampleProduct.greenColor, blue: sampleProduct.blueColor)
+            Color(
+                red: sampleProduct.redColor,
+                green: sampleProduct.greenColor,
+                blue: sampleProduct.blueColor
+            ).ignoresSafeArea(.all, edges: .all)
         )
     }
 }
