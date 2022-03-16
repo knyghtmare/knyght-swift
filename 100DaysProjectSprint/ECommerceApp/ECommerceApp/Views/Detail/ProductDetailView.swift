@@ -22,7 +22,10 @@ struct ProductDetailView: View {
             // HEADER
             // Text(sampleProduct.name)
             HeaderDetailView()
+                .padding(.horizontal)
             // DETAIL TOP PART
+            TopPartDetailView()
+                .padding(.horizontal)
             // DETAIL BOTTOM PART
             // RATINGS + SIZES
             // DESCRIPTION
