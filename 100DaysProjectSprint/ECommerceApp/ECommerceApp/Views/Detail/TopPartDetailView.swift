@@ -21,7 +21,15 @@ struct TopPartDetailView: View {
                 Text(sampleProduct.formattedPrice)
                     .font(.largeTitle)
                     .fontWeight(.black)
+                    .scaleEffect(1.35, anchor: .leading)
             }) //: VSTACK
+            
+            Spacer()
+            
+            // PHOTO
+            Image(sampleProduct.image)
+                .resizable()
+                .scaledToFit()
         }) //: HSTACK
     }
 }
