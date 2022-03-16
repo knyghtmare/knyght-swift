@@ -16,6 +16,7 @@ struct BrandGridView: View {
             LazyHGrid(rows: gridLayout, spacing: columnSpacing, content: {
                 Text("A")
             }) // GRID
+            .frame(height: 200)
         }) // Scroll
     }
 }
