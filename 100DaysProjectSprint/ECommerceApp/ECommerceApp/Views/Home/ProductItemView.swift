@@ -17,8 +17,12 @@ struct ProductItemView: View {
         VStack(alignment: .leading, spacing: 6, content: {
             // PHOTO
             ZStack {
-                
-            }
+                Image(product.image)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(10)
+            } //: ZSTACK
+            .background(Color(red: product.color[0], green: product.color[1], blue: product.color[2]))
             // NAME
             Text(product.name)
             // PRICE
