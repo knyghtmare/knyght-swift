@@ -25,6 +25,7 @@ struct TopPartDetailView: View {
                     .fontWeight(.black)
                     .scaleEffect(1.35, anchor: .leading)
             }) //: VSTACK
+            .offset(y: isAnimating ? -50 : -75)
             
             Spacer()
             
@@ -33,6 +34,11 @@ struct TopPartDetailView: View {
                 .resizable()
                 .scaledToFit()
         }) //: HSTACK
+        .onAppear(perform: {
+            withAnimation(.easeOut(duration: 0.75)) {
+                isAnimating.toggle()
+            }
+        })
     }
 }
 
