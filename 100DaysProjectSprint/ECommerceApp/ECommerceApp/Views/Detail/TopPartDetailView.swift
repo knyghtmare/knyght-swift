@@ -16,6 +16,11 @@ struct TopPartDetailView: View {
             // PRICE
             VStack(alignment: .leading, spacing: 6, content: {
                 Text("Price")
+                    .fontWeight(.semibold)
+                
+                Text(sampleProduct.formattedPrice)
+                    .font(.largeTitle)
+                    .fontWeight(.black)
             }) //: VSTACK
         }) //: HSTACK
     }
