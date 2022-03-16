@@ -16,10 +16,13 @@ struct ProductItemView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6, content: {
             // PHOTO
+            ZStack {
+                
+            }
             // NAME
             Text(product.name)
             // PRICE
-            Text(product.price)
+            // Text(product.price)
         }) //: VSTACK
     }
 }
