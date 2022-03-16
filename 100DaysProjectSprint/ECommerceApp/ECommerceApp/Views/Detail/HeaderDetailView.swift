@@ -21,5 +21,8 @@ struct HeaderDetailView: View {
 struct HeaderDetailView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderDetailView()
+            .previewLayout(.sizeThatFits)
+            .padding()
+            .background(Color.gray)
     }
 }
