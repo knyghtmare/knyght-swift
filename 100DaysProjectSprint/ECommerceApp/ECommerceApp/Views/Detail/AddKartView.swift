@@ -19,6 +19,7 @@ struct AddKartView: View {
         .background(
             Color(red: sampleProduct.redColor, green: sampleProduct.greenColor, blue: sampleProduct.blueColor)
         )
+        .clipShape(Capsule())
     }
 }
 
