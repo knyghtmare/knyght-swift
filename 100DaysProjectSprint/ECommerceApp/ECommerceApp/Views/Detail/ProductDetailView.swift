@@ -42,7 +42,7 @@ struct ProductDetailView: View {
                 // DESCRIPTION
                 ScrollView(.vertical, showsIndicators: false, content: {
                     // code here
-                    Text(sampleProduct.description)
+                    Text(shop.selectedProduct?.description ?? sampleProduct.description)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
