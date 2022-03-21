@@ -31,6 +31,10 @@ struct ProductDetailView: View {
             
             VStack(alignment: .center, spacing: 0, content: {
                 // code here
+                // RATING + SIZES
+                // DESCRIPTION
+                // QUANTITY + FAVOURITE
+                // CART BUTTON
             }) //: VSTACK
             
             // RATINGS + SIZES
