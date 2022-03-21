@@ -9,6 +9,6 @@ import SwiftUI
 
 // creating a shop class
 class Shop: ObservableObject {
-    var showingProduct: Bool = false
-    var selectedProduct: ProductModel? = nil
+    @Published var showingProduct: Bool = false
+    @Published var selectedProduct: ProductModel? = nil
 }
