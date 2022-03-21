@@ -26,7 +26,11 @@ struct ProductDetailView: View {
             // DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
+            
             // DETAIL BOTTOM PART
+            
+            VStack(alignment: .center, spacing: <#T##CGFloat?#>, content: <#T##() -> _#>)
+            
             // RATINGS + SIZES
             // DESCRIPTION
             // QUANTITY + FAVOURITE
