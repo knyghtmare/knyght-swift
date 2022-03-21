@@ -19,10 +19,18 @@ struct QuanFavView: View {
             Button(action: {}, label: {
                 Image(systemName: "minus.circle")
             }) //BUTTON
+            
+            Text("\(counter)")
+                .fontWeight(.semibold)
+                .frame(minWidth: 36)
+            
+            Button(action: {}, label: {
+                Image(systemName: "plus.circle")
+            }) //BUTTON
         }) //HSTACK
-            .font(.system(.title, design: .rounded))
-            .foregroundColor(.black)
-            .imageScale(.large )
+        .font(.system(.title, design: .rounded))
+        .foregroundColor(.black)
+        .imageScale(.large )
     }
 }
 
