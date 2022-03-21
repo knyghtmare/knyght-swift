@@ -18,6 +18,7 @@ struct QuanFavView: View {
             // QUANTITY
             Button(action: {
                 if counter > 0 {
+                    feedback.impactOccurred()
                     counter -= 1
                 }
             }, label: {
@@ -30,6 +31,7 @@ struct QuanFavView: View {
             
             Button(action: {
                 if counter < 100 {
+                    feedback.impactOccurred()
                     counter += 1
                 }
             }, label: {
@@ -39,7 +41,9 @@ struct QuanFavView: View {
             Spacer()
             
             // Favourite
-            Button(action: {}, label: {
+            Button(action: {
+                feedback.impactOccurred()
+            }, label: {
                 Image(systemName: "heart.circle")
                     .foregroundColor(.pink)
             }) //BUTTON
