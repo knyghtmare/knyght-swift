@@ -14,9 +14,15 @@ struct QuanFavView: View {
     
     // MARK: - body<##><##>
     var body: some View {
+        // QUANTITY
         HStack(alignment: .center, spacing: 6, content: {
-            Text("Cheese")
+            Button(action: {}, label: {
+                Image(systemName: "minus.circle")
+            }) //BUTTON
         }) //HSTACK
+            .font(.system(.title, design: .rounded))
+            .foregroundColor(.black)
+            .imageScale(.large )
     }
 }
 
