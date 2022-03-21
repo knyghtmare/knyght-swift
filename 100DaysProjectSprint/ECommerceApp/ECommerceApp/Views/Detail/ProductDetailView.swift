@@ -33,6 +33,9 @@ struct ProductDetailView: View {
                 // code here
                 // RATING + SIZES
                 // DESCRIPTION
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    // code here
+                }) // SCROLL
                 // QUANTITY + FAVOURITE
                 // CART BUTTON
             }) //: VSTACK
