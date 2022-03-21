@@ -14,7 +14,9 @@ struct QuanFavView: View {
     
     // MARK: - body<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, spacing: 6, content: {
+            Text("Cheese")
+        }) //HSTACK
     }
 }
 
