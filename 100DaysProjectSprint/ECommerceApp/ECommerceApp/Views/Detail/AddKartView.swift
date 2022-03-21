@@ -10,6 +10,8 @@ import SwiftUI
 struct AddKartView: View {
     // MARK: - properties
     
+    @EnvironmentObject var shop: Shop
+    
     // MARK: - body<##><##>
     var body: some View {
         Button(action: {}, label: {
@@ -22,7 +24,11 @@ struct AddKartView: View {
         }) // BUTTON
         .padding(15)
         .background(
-            Color(red: sampleProduct.redColor, green: sampleProduct.greenColor, blue: sampleProduct.blueColor)
+            Color(
+                red: shop.selectedProduct?.redColor ?? sampleProduct.redColor,
+                green: shop.selectedProduct?.greenColor ?? sampleProduct.greenColor,
+                blue: shop.selectedProduct?.blueColor ?? sampleProduct.blueColor
+            )
         )
         .clipShape(Capsule())
     }
@@ -35,5 +41,6 @@ struct AddKartView_Previews: PreviewProvider {
         AddKartView()
             .previewLayout(.sizeThatFits)
             .padding()
+            .environmentObject(Shop())
     }
 }
