@@ -12,6 +12,7 @@ struct ECommerceAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
         }
     }
 }
