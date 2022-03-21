@@ -35,9 +35,14 @@ struct ProductDetailView: View {
                 // DESCRIPTION
                 ScrollView(.vertical, showsIndicators: false, content: {
                     // code here
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
                 }) // SCROLL
                 // QUANTITY + FAVOURITE
                 // CART BUTTON
+                Spacer()
             }) //: VSTACK
             
             // RATINGS + SIZES
