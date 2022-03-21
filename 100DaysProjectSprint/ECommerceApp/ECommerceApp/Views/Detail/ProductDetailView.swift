@@ -57,7 +57,7 @@ struct ProductDetailView: View {
             // ADD TO CART
             Spacer()
         }) //: VSTACK
-            .zIndex(1.0)
+            .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(
