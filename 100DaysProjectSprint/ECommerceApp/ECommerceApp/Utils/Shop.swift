@@ -5,4 +5,10 @@
 //  Created by Tahsin Jahin Khalid on 22/3/22.
 //
 
-import Foundation
+import SwiftUI
+
+// creating a shop class
+class Shop {
+    var showingProduct: Bool = false
+    var selectedProduct: ProductModel? = nil
+}
