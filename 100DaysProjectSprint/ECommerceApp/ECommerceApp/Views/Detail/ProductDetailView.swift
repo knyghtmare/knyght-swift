@@ -51,7 +51,9 @@ struct ProductDetailView: View {
                 QuanFavView()
                     .padding(.vertical, 10)
                 // CART BUTTON
-                Spacer()
+                // Spacer()
+                AddKartView()
+                    .padding(.bottom, 20)
             }) //: VSTACK
             .padding(.horizontal)
             .background(
