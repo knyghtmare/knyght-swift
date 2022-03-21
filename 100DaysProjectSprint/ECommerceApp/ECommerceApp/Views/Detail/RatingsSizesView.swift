@@ -21,5 +21,7 @@ struct RatingsSizesView: View {
 struct RatingsSizesView_Previews: PreviewProvider {
     static var previews: some View {
         RatingsSizesView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
