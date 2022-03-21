@@ -12,7 +12,13 @@ struct AddKartView: View {
     
     // MARK: - body<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {}, label: {
+            Text("Add to Cart".uppercased())
+        }) // BUTTON
+        .padding(15)
+        .background(
+            Color(red: sampleProduct.redColor, green: sampleProduct.greenColor, blue: sampleProduct.blueColor)
+        )
     }
 }
 
