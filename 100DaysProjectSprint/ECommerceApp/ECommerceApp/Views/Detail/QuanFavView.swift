@@ -10,6 +10,8 @@ import SwiftUI
 struct QuanFavView: View {
     // MARK: - properties
     
+    @State private var counter: Int = 0
+    
     // MARK: - body<##><##>
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
