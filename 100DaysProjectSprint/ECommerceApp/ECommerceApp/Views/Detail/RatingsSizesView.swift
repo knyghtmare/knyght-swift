@@ -27,11 +27,11 @@ struct RatingsSizesView: View {
                     ForEach(1...5, id: \.self) { item in
                         Button(action: {}, label: {
                             Image(systemName: "star.fill")
-                        })
+                        }) // BUTTON
                             .frame(width: 28, height: 28, alignment: .center)
                             .background(ColorGray.cornerRadius(5))
                             .foregroundColor(.white)
-                    }
+                    } //LOOP
                 }) // HSTACK
             }) //VSTACK
             
@@ -48,11 +48,17 @@ struct RatingsSizesView: View {
                     ForEach(sizes, id: \.self) { size in
                         Button(action: {}, label: {
                             Text(size)
-                        })
-                            .frame(width: 28, height: 28, alignment: .center)
-                            .background(ColorGray.cornerRadius(5))
-                            .foregroundColor(.white)
-                    }
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .frame(width: 28, height: 28, alignment: .center)
+                                .background(ColorGray.cornerRadius(5))
+                                .background(
+                                    RoundedRectangle(cornerRadius: 5)
+                                        .stroke(ColorGray)
+                                )
+                        }) // BUTTON
+                    } // LOOP
                 }) // HSTACK
             }) //VSTACK
         }) // HSTACK
