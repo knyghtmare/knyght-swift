@@ -73,9 +73,9 @@ struct ProductDetailView: View {
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(
-                red: sampleProduct.redColor,
-                green: sampleProduct.greenColor,
-                blue: sampleProduct.blueColor
+                red: shop.selectedProduct?.redColor ?? sampleProduct.redColor,
+                green: shop.selectedProduct?.greenColor ?? sampleProduct.greenColor,
+                blue: shop.selectedProduct?.blueColor ?? sampleProduct.blueColor
             ).ignoresSafeArea(.all, edges: .all)
         )
     }
