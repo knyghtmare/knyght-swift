@@ -6,3 +6,15 @@
 //
 
 import SwiftUI
+
+struct CustomShape: View {
+    var body: some View {
+        Text("Hello!")
+    }
+}
+
+struct CustomShape_Preview: PreviewProvider {
+    static var previews: some View {
+        CustomShape()
+    }
+}
