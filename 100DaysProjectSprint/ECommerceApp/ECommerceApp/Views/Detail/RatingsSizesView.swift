@@ -18,7 +18,7 @@ struct RatingsSizesView: View {
                 Text("Ratings")
                     .font(.footnote)
                     .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(ColorGray)
                 
                 HStack(alignment: .center, spacing: 3, content: {
                     ForEach(1...5, id: \.self) { item in
@@ -26,7 +26,7 @@ struct RatingsSizesView: View {
                             Image(systemName: "star.fill")
                         })
                             .frame(width: 28, height: 28, alignment: .center)
-                            .background(.gray)
+                            .background(ColorGray.cornerRadius(5))
                             .foregroundColor(.white)
                     }
                 }) // HSTACK
@@ -35,7 +35,23 @@ struct RatingsSizesView: View {
             Spacer()
             
             // SIZES
-            Text("Sizes")
+            VStack(alignment: .trailing, spacing: 3, content: {
+                Text("Sizes")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .foregroundColor(ColorGray)
+                
+                HStack(alignment: .center, spacing: 3, content: {
+                    ForEach(1...5, id: \.self) { item in
+                        Button(action: {}, label: {
+                            Image(systemName: "star.fill")
+                        })
+                            .frame(width: 28, height: 28, alignment: .center)
+                            .background(ColorGray.cornerRadius(5))
+                            .foregroundColor(.white)
+                    }
+                }) // HSTACK
+            }) //VSTACK
         }) // HSTACK
     }
 }
