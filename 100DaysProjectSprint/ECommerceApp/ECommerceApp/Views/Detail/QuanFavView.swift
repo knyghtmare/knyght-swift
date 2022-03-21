@@ -30,6 +30,10 @@ struct QuanFavView: View {
             
             Spacer()
             
+            // Favourite
+            Button(action: {}, label: {
+                Image(systemName: "heart.circle")
+            }) //BUTTON
             
         }) //HSTACK
         .font(.system(.title, design: .rounded))
