@@ -45,7 +45,10 @@ struct ProductDetailView: View {
                 Spacer()
             }) //: VSTACK
             .padding(.horizontal)
-            .background(Color.white)
+            .background(
+                Color.white
+                    .clipShape(CustomShape())
+            )
             
             // RATINGS + SIZES
             // DESCRIPTION
