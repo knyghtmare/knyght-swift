@@ -14,8 +14,8 @@ struct QuanFavView: View {
     
     // MARK: - body<##><##>
     var body: some View {
-        // QUANTITY
         HStack(alignment: .center, spacing: 6, content: {
+            // QUANTITY
             Button(action: {}, label: {
                 Image(systemName: "minus.circle")
             }) //BUTTON
@@ -27,6 +27,10 @@ struct QuanFavView: View {
             Button(action: {}, label: {
                 Image(systemName: "plus.circle")
             }) //BUTTON
+            
+            Spacer()
+            
+            
         }) //HSTACK
         .font(.system(.title, design: .rounded))
         .foregroundColor(.black)
