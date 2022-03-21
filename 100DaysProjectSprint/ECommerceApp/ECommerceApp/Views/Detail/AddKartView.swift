@@ -13,7 +13,9 @@ struct AddKartView: View {
     // MARK: - body<##><##>
     var body: some View {
         Button(action: {}, label: {
+            Spacer()
             Text("Add to Cart".uppercased())
+            Spacer()
         }) // BUTTON
         .padding(15)
         .background(
