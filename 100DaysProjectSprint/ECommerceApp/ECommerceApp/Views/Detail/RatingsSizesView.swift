@@ -19,6 +19,17 @@ struct RatingsSizesView: View {
                     .font(.footnote)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
+                
+                HStack(alignment: .center, spacing: 3, content: {
+                    ForEach(1...5, id: \.self) { item in
+                        Button(action: {}, label: {
+                            Image(systemName: "star.fill")
+                        })
+                            .frame(width: 28, height: 28, alignment: .center)
+                            .background(.gray)
+                            .foregroundColor(.white)
+                    }
+                }) // HSTACK
             }) //VSTACK
             
             Spacer()
