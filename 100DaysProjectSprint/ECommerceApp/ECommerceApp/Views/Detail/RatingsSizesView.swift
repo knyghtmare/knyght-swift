@@ -12,7 +12,20 @@ struct RatingsSizesView: View {
     
     // MARK: - body<##><##>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top, spacing: 3, content: {
+            // RATINGS
+            VStack(alignment: .leading, spacing: 3, content: {
+                Text("Ratings")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+            }) //VSTACK
+            
+            Spacer()
+            
+            // SIZES
+            Text("Sizes")
+        }) // HSTACK
     }
 }
 
