@@ -55,7 +55,7 @@ struct RatingsSizesView: View {
                                 .background(ColorGray.cornerRadius(5))
                                 .background(
                                     RoundedRectangle(cornerRadius: 5)
-                                        .stroke(ColorGray)
+                                        .stroke(ColorGray, lineWidth: 2)
                                 )
                         }) // BUTTON
                     } // LOOP
