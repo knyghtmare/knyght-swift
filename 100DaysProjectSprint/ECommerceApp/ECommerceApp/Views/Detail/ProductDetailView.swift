@@ -44,6 +44,8 @@ struct ProductDetailView: View {
                 // CART BUTTON
                 Spacer()
             }) //: VSTACK
+            .padding(.horizontal)
+            .background(Color.white)
             
             // RATINGS + SIZES
             // DESCRIPTION
