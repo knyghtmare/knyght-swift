@@ -29,7 +29,9 @@ struct ProductDetailView: View {
             
             // DETAIL BOTTOM PART
             
-            VStack(alignment: .center, spacing: <#T##CGFloat?#>, content: <#T##() -> _#>)
+            VStack(alignment: .center, spacing: 0, content: {
+                // code here
+            }) //: VSTACK
             
             // RATINGS + SIZES
             // DESCRIPTION
