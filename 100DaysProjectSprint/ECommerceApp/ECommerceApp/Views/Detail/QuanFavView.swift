@@ -33,6 +33,7 @@ struct QuanFavView: View {
             // Favourite
             Button(action: {}, label: {
                 Image(systemName: "heart.circle")
+                    .foregroundColor(.pink)
             }) //BUTTON
             
         }) //HSTACK
