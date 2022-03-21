@@ -43,6 +43,12 @@ struct ContentView: View {
                             LazyVGrid(columns: gridLayout, spacing: 15, content: {
                                 ForEach(products) {product in
                                     ProductItemView(product: product)
+                                        .onTapGesture {
+                                            withAnimation(.easeOut) {
+                                                shop.selectedProduct = product
+                                                shop.showingProduct = true
+                                            }
+                                        }
                                 } // :LOOP
                             }) //: GRID
                             .padding(15)
@@ -58,7 +64,7 @@ struct ContentView: View {
                 } //: VSTACK
                 .background(ColorBackground.ignoresSafeArea(.all, edges: .all))
             } else {
-                /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+                ProductDetailView()
             } // conditional
         } //: ZSTACK
         .ignoresSafeArea(.all, edges: .top)
@@ -70,5 +76,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Shop())
     }
 }
