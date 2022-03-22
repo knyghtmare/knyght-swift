@@ -19,6 +19,8 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    // MARK: - function<##>
+    
     var body: some View {
         NavigationView {
                 List {
