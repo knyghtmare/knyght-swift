@@ -19,7 +19,7 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    // MARK: - function<##>
+    // MARK: - body
     
     var body: some View {
         NavigationView {
@@ -46,6 +46,8 @@ struct ContentView: View {
             // Text("Select an item")
         } // NavigationView
     }
+    
+    // MARK: - function<##>
 
     private func addItem() {
         withAnimation {
