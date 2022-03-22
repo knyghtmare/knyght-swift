@@ -32,7 +32,7 @@ struct ContentView: View {
                     ToolbarItem(placement: .navigationBarLeading) {
                         EditButton()
                     }
-                    ToolbarItem {
+                    ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: addItem) {
                             Label("Add Item", systemImage: "plus")
                         }
