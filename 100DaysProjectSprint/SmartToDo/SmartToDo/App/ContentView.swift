@@ -9,6 +9,9 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    // MARK: - property
+    
+    // Fetching data<##>
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
