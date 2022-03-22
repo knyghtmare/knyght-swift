@@ -8,8 +8,10 @@
 import CoreData
 
 struct PersistenceController {
+    // MARK: - persistent controller<##>
     static let shared = PersistenceController()
-
+    
+    // MARK: - preview
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
@@ -28,8 +30,10 @@ struct PersistenceController {
         return result
     }()
 
+    // MARK: - persistence container
     let container: NSPersistentContainer
 
+    // MARK: - initialisation
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "SmartToDo")
         if inMemory {
